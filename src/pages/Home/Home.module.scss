@@ -1,6 +1,28 @@
 @import "../../styles/styles.scss";
 
 .home {
+    background-color: $primary-dark;
+    font-size: $font-size-2;
+    height: 100vh;
+}
+
+.hero {
+    position: relative;
+    max-width: 30%;
+    left: 220px;
+    top: 400px;
+    font-size: $font-size-3;
+    text-align: center;
     background-color: $galaxy-purple;
-    color: $primary-white;
+}
+
+.scroll {
+    position: relative;
+    max-height: 30%;
+    max-width: 10%;
+    left: 1200px;
+    top: 500px;
+    font-size: $font-size-3;
+    text-align: center;
+    background-color: $galaxy-purple;
 }

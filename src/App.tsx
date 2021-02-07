@@ -1,20 +1,21 @@
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import Background from "./components/Background/Background";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <>
-      <Router>
+    <Router>
+      <Background>
         <NavigationBar />
         <Switch>
           <Route path="/">
-            <Home></Home>
+            <Home />
           </Route>
         </Switch>
-      </Router>
-    </>
+      </Background>
+    </Router>
   );
-}
+};
 
 export default App;

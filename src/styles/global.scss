@@ -1,0 +1,21 @@
+@import "./styles.scss";
+
+// force the top div's to fill up screen
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: $font-sans;
+  font-size: $font-size-1;
+  color: $primary-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: $font-monospace;
+}
