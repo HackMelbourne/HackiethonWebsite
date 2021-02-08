@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 
-import rocket from "../../assets/rocket.svg";
+import rocket from "../../assets/rocket-white.svg";
 
 const Logo = () => {
   return (

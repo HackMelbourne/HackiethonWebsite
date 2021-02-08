@@ -30,7 +30,7 @@ const Scroll = () => {
     <nav className={styles.scroll}>
       {/* <div className={styles.thumb}/> */}
       <div className={styles.links}>
-        <a href="#home">A</a>
+        <a href="#home"> </a>
         <a href="#schedule">SCHEDULE</a>
         <a href="#rules">RULES &amp; FAQ</a>
         <a href="#communication">COMMUNICATION</a>

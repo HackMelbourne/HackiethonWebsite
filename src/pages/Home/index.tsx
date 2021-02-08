@@ -1,6 +1,8 @@
 import Hero from "../../components/Hero/Hero";
 import Scroll from "../../components/Scroll/Scroll";
+import SpaceScene from "../../components/SpaceScene/SpaceScene";
 import styles from "./Home.module.scss";
+
 
 const Schedule = () => {
   return <div id="schedule" className={styles.schedule}>Schedule</div>;
@@ -14,6 +16,7 @@ const Home = () => {
   return (
     <>
       <div id="home" className={styles.home}>
+        <SpaceScene />
         <div className={styles.hero}>
           <Hero />
         </div>

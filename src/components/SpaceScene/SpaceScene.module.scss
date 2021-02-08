@@ -1,0 +1,102 @@
+@import "../../styles/styles.scss";
+
+.rocket {
+  position: absolute;
+  right: 300px;
+  bottom: 310px;
+  z-index: 10;
+}
+
+.planet1 {
+  position: absolute;
+  right: -600px;
+  bottom: -290px;
+}
+
+.planet2 {
+  position: absolute;
+}
+
+// what does it mean to be a star?
+// It is to be rounded, white, while casting a white shadow
+@mixin star {
+  border-radius: 100%;
+  background: $primary-white;
+  box-shadow:
+    -4px 0px 10px #ffffff,
+    0px -4px 10px #ffffff,
+    4px 0px 10px #ffffff,
+    0px 4px 10px #ffffff;
+}
+
+.star1 {
+  @include star;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 558px;
+  top: 121px;
+}
+
+.star2 {
+  @include star;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 819px;
+  top: 227px;
+}
+
+.star3 {
+  @include star;
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  left: 1240px;
+  top: 183px;
+}
+
+.star4 {
+  @include star;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 100px;
+  top: 360px;
+}
+
+.star5 {
+  @include star;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 504px;
+  top: 420px;
+}
+
+.star6 {
+  @include star;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 782px;
+  top: 400px;
+}
+
+.star7 {
+  @include star;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 159px;
+  top: 660px;
+}
+
+.star8 {
+  @include star;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 888px;
+  top: 520px;
+}

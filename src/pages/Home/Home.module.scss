@@ -1,9 +1,12 @@
 @import "../../styles/styles.scss";
 
 .schedule {
-    background-color: $primary-darker;
+    background-color: $primary-dark;
     font-size: $font-size-2;
     height: 100vh;
+    filter: brightness(50%);
+    opacity: 50%;
+    z-index: 10;
 }
 
 .rules {
@@ -22,6 +25,7 @@
     position: absolute;
     left: 200px;
     bottom: 150px;
+    z-index: 10;
 }
 
 .scroll {
@@ -29,5 +33,23 @@
     max-height: 30rem;
     max-width: 50rem;
     right: 100px;
-    bottom: 100px;
+    bottom: 70px;
+    z-index: 20;
+}
+
+.rocket {
+    position: absolute;
+    right: 300px;
+    bottom: 310px;
+    z-index: 10;
+}
+
+.planet1 {
+    position: absolute;
+    right: -600px;
+    bottom: -290px;
+}
+
+.planet2 {
+    position: absolute;
 }
