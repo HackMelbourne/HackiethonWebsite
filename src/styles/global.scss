@@ -7,6 +7,17 @@ body,
   height: 100%;
 }
 
+// links look like normal text then light-blue when hovered (?)
+a {
+  color: $primary-white;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $light-blue;
+    text-decoration: none;
+  }
+}
+
 body {
   margin: 0;
   font-family: $font-sans;
