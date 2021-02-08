@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 
+import rocket from "../../assets/rocket.svg";
+
 const Logo = () => {
-  return <h3 className={styles.logo}>Hackiethon</h3>;
+  return (
+    <div className={styles.logo}>
+      <img src={rocket} height="60px" alt="rocket" />
+      <h3>
+        Hackiethon
+      </h3>
+    </div>
+  );
 };
 
 const Navbar = () => {

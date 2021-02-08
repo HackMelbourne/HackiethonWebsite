@@ -6,6 +6,12 @@
     height: 100vh;
 }
 
+.rules {
+    background-color: $primary-dark;
+    font-size: $font-size-2;
+    height: 100vh;
+}
+
 .home {
     background-color: $primary-dark;
     font-size: $font-size-2;
@@ -15,16 +21,13 @@
 .hero {
     position: absolute;
     left: 200px;
-    bottom: 120px;
+    bottom: 150px;
 }
 
 .scroll {
-    position: absolute;
+    position: fixed;
     max-height: 30rem;
     max-width: 50rem;
     right: 100px;
-    bottom: 200px;
-    font-size: $font-size-3;
-    text-align: center;
-    background-color: $galaxy-purple;
+    bottom: 100px;
 }

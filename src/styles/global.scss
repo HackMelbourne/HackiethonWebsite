@@ -5,7 +5,20 @@ html,
 body,
 #root {
   height: 100%;
+}
+
+html {
+  scrollbar-color: grey $primary-darker;
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: $font-sans;
+  font-size: $font-size-1;
+  color: $primary-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // links look like normal text then light-blue when hovered (?)
@@ -17,15 +30,6 @@ a {
     color: $light-blue;
     text-decoration: none;
   }
-}
-
-body {
-  margin: 0;
-  font-family: $font-sans;
-  font-size: $font-size-1;
-  color: $primary-white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
