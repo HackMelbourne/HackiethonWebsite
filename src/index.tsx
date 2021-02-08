@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 // global styles and custom font
 import "./styles/global.scss";
 import "@fontsource/poppins";
+import "@fontsource/poppins/700.css";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";

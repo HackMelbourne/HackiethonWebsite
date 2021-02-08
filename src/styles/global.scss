@@ -7,15 +7,9 @@ body,
   height: 100%;
 }
 
-// links look like normal text then light-blue when hovered (?)
-a {
-  color: $primary-white;
-  text-decoration: none;
-  &:hover,
-  &:focus {
-    color: $light-blue;
-    text-decoration: none;
-  }
+html {
+  scrollbar-color: grey $primary-darker;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +19,17 @@ body {
   color: $primary-white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+// links look like normal text then light-blue when hovered (?)
+a {
+  color: $primary-white;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $light-blue;
+    text-decoration: none;
+  }
 }
 
 code {

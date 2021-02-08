@@ -1,28 +1,58 @@
 @import "../../styles/styles.scss";
 
+@mixin page {
+  background-color: $primary-dark;
+  font-size: $font-size-2;
+  height: 100vh;
+}
+
+@mixin darker {
+  filter: brightness(50%);
+  opacity: 50%;
+  z-index: 10;
+}
+
+.schedule {
+  @include page;
+  @include darker;
+}
+
+.rules {
+  @include page;
+}
+
+.communication {
+  @include page;
+  @include darker;
+}
+
+.resources {
+  @include page;
+}
+
+.prizes {
+  @include page;
+  @include darker;
+}
+
 .home {
-    background-color: $primary-dark;
-    font-size: $font-size-2;
-    height: 100vh;
+  background-color: $primary-dark;
+  font-size: $font-size-2;
+  height: 100vh;
 }
 
 .hero {
-    position: relative;
-    max-width: 30%;
-    left: 220px;
-    top: 400px;
-    font-size: $font-size-3;
-    text-align: center;
-    background-color: $galaxy-purple;
+  position: absolute;
+  left: 200px;
+  bottom: 150px;
+  z-index: 10;
 }
 
 .scroll {
-    position: relative;
-    max-height: 30%;
-    max-width: 10%;
-    left: 1200px;
-    top: 500px;
-    font-size: $font-size-3;
-    text-align: center;
-    background-color: $galaxy-purple;
+  position: fixed;
+  max-height: 30rem;
+  max-width: 50rem;
+  right: 100px;
+  bottom: 20px;
+  z-index: 20;
 }

@@ -1,0 +1,24 @@
+@import "../../styles/styles.scss";
+
+.scroll {
+}
+
+.thumb {
+  position: relative;
+  left: 2px;
+  top: 60px;
+  border-right: 10px solid $primary-white;
+  height: 40px;
+  z-index: -1;
+}
+
+.links {
+  border-right: 4px solid $primary-white;
+  text-align: right;
+  font-size: $font-size-1;
+  a {
+    // make each anchor "start on a new line"
+    display: block;
+    margin: 2rem;
+  }
+}
