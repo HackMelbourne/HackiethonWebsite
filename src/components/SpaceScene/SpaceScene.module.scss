@@ -4,7 +4,6 @@
   position: absolute;
   right: 300px;
   bottom: 310px;
-  z-index: 10;
 }
 
 .planet1 {
@@ -25,7 +24,7 @@
   @return unquote($value)
 }
 
-$shadows-small:  multiple-box-shadow(3000);
+$shadows-small:  multiple-box-shadow(2000);
 $shadows-medium: multiple-box-shadow(1000);
 $shadows-large:  multiple-box-shadow(600);
 
