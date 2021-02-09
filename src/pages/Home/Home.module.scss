@@ -30,31 +30,12 @@
   @include page;
 }
 
-.prizes {
-  @include page;
-  // @include darker;
-
-  padding: 10rem;
-}
-
-.title {
-  @include page;
-}
-
 .space {
   z-index: 0;
 }
 
-.hero {
-  position: absolute;
-  left: 200px;
-  bottom: 150px;
-}
-
 .scroll {
   position: fixed;
-  max-height: 30rem;
-  max-width: 50rem;
   right: 100px;
   bottom: 20px;
   z-index: 20;

@@ -3,6 +3,7 @@ import SpaceScene from "../../components/SpaceScene";
 import styles from "./Home.module.scss";
 
 import Title from "./Title";
+import Prizes from "./Prizes";
 
 interface Props {
   pageHeight: number;
@@ -59,12 +60,6 @@ const Resources = () => {
   );
 };
 
-const Prizes = () => {
-  return (
-    <section id="prizes" className={styles.prizes}>
-      <h2>Prizes</h2>
-    </section>
-  );
-};
+
 
 export default Home;

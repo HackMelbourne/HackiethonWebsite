@@ -1,0 +1,50 @@
+@import "../../../styles/styles.scss";
+@import "../Home.module.scss";
+
+.prizes {
+  @include page;
+  //   @include darker;
+
+  padding: 6rem;
+
+  h2 {
+    font-size: $font-size-5;
+  }
+  h3 {
+    font-size: $font-size-3;
+  }
+}
+
+.topPrizes {
+  display: flex;
+  justify-content: space-evenly;
+
+  .prizeDescription {
+    text-align: center;
+    position: relative;
+    bottom: 120px;
+    right: 20px;
+
+    h2,
+    h3 {
+      margin: 0;
+    }
+  }
+}
+
+.honourableMentions {
+  display: flex;
+  justify-content: space-evenly;
+
+  .prizeDescription {
+    text-align: left;
+    position: relative;
+    left: 150px;
+    bottom: 150px;
+
+    h2,
+    h3 {
+      margin: 0;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import Background from "./components/Background/Background";
-import Navbar from "./components/Navbar/Navbar";
+import Background from "./components/Background";
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Updates from "./pages/Updates";
 
