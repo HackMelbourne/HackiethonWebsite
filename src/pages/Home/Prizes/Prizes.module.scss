@@ -19,10 +19,18 @@
   display: flex;
   justify-content: space-evenly;
 
+  // let CSS scale image down (but not up) if needed
+  img {
+    width: 300px;
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+  }
+
   .prizeDescription {
     text-align: center;
     position: relative;
-    bottom: 120px;
+    bottom: 100px;
     right: 20px;
 
     h2,
@@ -35,6 +43,13 @@
 .honourableMentions {
   display: flex;
   justify-content: space-evenly;
+
+  img {
+    height: 200px;
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+  }
 
   .prizeDescription {
     text-align: left;
