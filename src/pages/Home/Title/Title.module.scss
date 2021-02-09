@@ -1,0 +1,11 @@
+@import "../Home.module.scss";
+
+.title {
+  @include page;
+}
+
+.hero {
+  position: absolute;
+  left: 200px;
+  bottom: 150px;
+}

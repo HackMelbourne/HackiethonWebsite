@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Scroll.module.scss";
+import rocket from "../../assets/rocket-white-45.svg"
 
 interface Props {
   pageHeight: number;
@@ -42,20 +43,20 @@ const Scroll = ({ pageHeight }: Props) => {
 
   // when a link is clicked the screen smooth scrolls to that part of the page
   return (
-    <nav className={styles.scroll}>
+    <nav>
       <div
         style={{
           position: "relative",
           left: "2px",
           // this is close enough, maybe using rems would be better?
-          top: `${85 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
+          top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
           borderRight: "10px solid #ffffff",
-          height: "4rem",
+          height: "4.1rem",
           zIndex: -1,
         }}
       />
       <div className={styles.links} ref={ref}>
-        <a href="#home">A</a>
+        <a href="#title"><img src={rocket} height="40px" alt="rocket" /></a>
         <a href="#schedule">SCHEDULE</a>
         <a href="#rules">RULES &amp; FAQ</a>
         <a href="#communication">COMMUNICATION</a>

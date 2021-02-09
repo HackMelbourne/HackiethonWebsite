@@ -4,7 +4,6 @@
   position: absolute;
   right: 300px;
   bottom: 310px;
-  z-index: 10;
 }
 
 .planet1 {
@@ -17,6 +16,18 @@
   position: absolute;
 }
 
+@function multiple-box-shadow ($n) {
+  $value: '#{random(4000)}px #{random(6000)}px #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(4000)}px #{random(6000)}px #FFF';
+  }
+  @return unquote($value)
+}
+
+$shadows-small:  multiple-box-shadow(2000);
+$shadows-medium: multiple-box-shadow(1000);
+$shadows-large:  multiple-box-shadow(600);
+
 // what does it mean to be a star?
 // It is to be rounded, white, while casting a white shadow
 @mixin star {
@@ -27,6 +38,33 @@
     0px -4px 10px #ffffff,
     4px 0px 10px #ffffff,
     0px 4px 10px #ffffff;
+}
+
+.stars1 {
+  @include star;
+  width: 1px;
+  height: 1px;
+  border-radius: 100%;
+  // background: transparent;
+  box-shadow: $shadows-small;
+}
+
+.stars2 {
+  @include star;
+  width: 2px;
+  height: 2px;
+  border-radius: 100%;
+  // background: transparent;
+  box-shadow: $shadows-medium;
+}
+
+.stars3 {
+  @include star;
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  // background: transparent;
+  box-shadow: $shadows-large;
 }
 
 .star1 {
