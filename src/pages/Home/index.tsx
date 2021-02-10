@@ -4,6 +4,7 @@ import styles from "./Home.module.scss";
 
 import Title from "./Title";
 import Prizes from "./Prizes";
+import Communication from "./Communication";
 
 interface Props {
   pageHeight: number;
@@ -42,13 +43,7 @@ const Rules = () => {
   );
 };
 
-const Communication = () => {
-  return (
-    <section id="communication" className={styles.communication}>
-      Communication
-    </section>
-  );
-};
+
 
 const Resources = () => {
   return (
