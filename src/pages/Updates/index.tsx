@@ -1,8 +1,18 @@
+import { StarryBackground } from "../../components/SpaceScene";
 import styles from "./Updates.module.scss";
+
+import Message from "../../components/Message";
 
 const Updates = () => {
   return (
-    <div className={styles.updates}/>
+    <>
+      <StarryBackground />
+      <div className={styles.container}>
+        <Message>
+            Nothing to see here... yet.
+        </Message>
+      </div>
+    </>
   );
 };
 

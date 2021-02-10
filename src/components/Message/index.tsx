@@ -3,7 +3,7 @@ import astronaut from "../../assets/astronaut-on-moon.svg";
 
 interface Props {
   // doesn't have to be JSX.Element, Message could just contain string
-  children: React.ReactNode; 
+  children: React.ReactNode;
 }
 
 const Message = ({ children }: Props) => {
@@ -13,9 +13,7 @@ const Message = ({ children }: Props) => {
         <img src={astronaut} alt="astronaut on moon" />
       </div>
       <div className={styles.text}>
-        <h2>
-          {children}
-        </h2>
+        <h2>{children}</h2>
       </div>
     </div>
   );

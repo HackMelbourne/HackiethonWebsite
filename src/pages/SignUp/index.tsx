@@ -1,9 +1,9 @@
 import { StarryBackground } from "../../components/SpaceScene";
-import styles from "./Sponsors.module.scss";
+import styles from "./SignUp.module.scss";
 
 import Message from "../../components/Message";
 
-const Sponsors = () => {
+const SignUp = () => {
   return (
     <>
       <StarryBackground />
@@ -16,4 +16,4 @@ const Sponsors = () => {
   );
 };
 
-export default Sponsors;
+export default SignUp;

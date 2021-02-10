@@ -1,7 +1,11 @@
 @import "../../styles/styles.scss";
 
-.updates {
-  background-color: $primary-dark;
+.container {
+  background-color: transparent;
   font-size: $font-size-2;
-  height: 101vh;
+  min-height: 100vh;
+
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
 }

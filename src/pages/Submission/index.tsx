@@ -7,7 +7,7 @@ const Submission = () => {
   return (
     <>
       <StarryBackground />
-      <div className={styles.submission}>
+      <div className={styles.container}>
         <Message>
           Nothing to see here <br/> until hackathon starts!
         </Message>
