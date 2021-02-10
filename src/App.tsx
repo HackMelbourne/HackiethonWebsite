@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Submission from "./pages/Submission";
 import Updates from "./pages/Updates";
+import Sponsors from "./pages/Sponsors";
 
 const PageNotFound = () => {
   return <h1 style={{ fontSize: "10rem" }}>404</h1>;
@@ -34,6 +35,9 @@ const App = () => {
             </Route>
             <Route path="/submission">
               <Submission />
+            </Route>
+            <Route path="/sponsors">
+              <Sponsors />
             </Route>
             <Route>
               {/* matches any other route: page for 404 error: */}

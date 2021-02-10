@@ -1,19 +1,19 @@
 import { StarryBackground } from "../../components/SpaceScene";
-import styles from "./Submission.module.scss";
+import styles from "./Sponsors.module.scss";
 
 import Message from "../../components/Message";
 
-const Submission = () => {
+const Sponsors = () => {
   return (
     <>
       <StarryBackground />
       <div className={styles.submission}>
         <Message>
-          Nothing to see here <br/> until hackathon starts!
+            Nothing to see here... yet.
         </Message>
       </div>
     </>
   );
 };
 
-export default Submission;
+export default Sponsors;
