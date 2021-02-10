@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Background from "./components/Background";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Submission from "./pages/Submission";
 import Updates from "./pages/Updates";
 
 const PageNotFound = () => {
@@ -30,6 +31,9 @@ const App = () => {
             </Route>
             <Route path="/updates">
               <Updates />
+            </Route>
+            <Route path="/submission">
+              <Submission />
             </Route>
             <Route>
               {/* matches any other route: page for 404 error: */}
