@@ -3,11 +3,11 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Background from "./components/Background";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Submission from "./pages/Submission";
 import Updates from "./pages/Updates";
-
-const PageNotFound = () => {
-  return <h1 style={{ fontSize: "10rem" }}>404</h1>;
-};
+import Sponsors from "./pages/Sponsors";
+import Error from "./pages/Error";
+import SignUp from "./pages/SignUp";
 
 const App = () => {
   // getting the total page height is effectful, this is needed for Scroll
@@ -25,15 +25,24 @@ const App = () => {
         <Background>
           <Navbar />
           <Switch>
-            <Route exact path="/">
+            <Route exact path={["/", "/participants"]}>
               <Home pageHeight={pageHeight} />
             </Route>
             <Route path="/updates">
               <Updates />
             </Route>
+            <Route path="/sponsors">
+              <Sponsors />
+            </Route>
+            <Route path="/submission">
+              <Submission />
+            </Route>
+            <Route path="/signUp">
+              <SignUp />
+            </Route>
             <Route>
               {/* matches any other route: page for 404 error: */}
-              <PageNotFound />
+              <Error />
             </Route>
           </Switch>
         </Background>

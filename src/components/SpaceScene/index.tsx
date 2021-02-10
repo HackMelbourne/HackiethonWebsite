@@ -4,6 +4,16 @@ import rocket from "../../assets/rocket-colour.svg";
 import planet1 from "../../assets/planet-purple-cropped.png";
 import planet2 from "../../assets/planet-blue.svg";
 
+const StarryBackground = () => {
+  return (
+    <>
+      <div className={styles.stars1}></div>
+      <div className={styles.stars2}></div>
+      <div className={styles.stars3}></div>
+    </>
+  );
+}
+
 const SpaceScene = () => {
   return (
     <div>
@@ -16,9 +26,7 @@ const SpaceScene = () => {
       <div className={styles.planet2}>
         <img src={planet2} alt="blue planet" />
       </div>
-      <div className={styles.stars1}></div>
-      <div className={styles.stars2}></div>
-      <div className={styles.stars3}></div>
+      <StarryBackground />
       <div className={styles.star1} />
       <div className={styles.star2} />
       <div className={styles.star3} />
@@ -31,4 +39,4 @@ const SpaceScene = () => {
   );
 };
 
-export default SpaceScene;
+export { SpaceScene as default, StarryBackground };

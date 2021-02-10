@@ -1,0 +1,20 @@
+@import "../../styles/styles.scss";
+
+.picture {
+    text-align: center;
+  img {
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+  }
+}
+
+.text {
+  font-size: $font-size-2;
+  text-align: center;
+  background-image: url("../../assets/long-blob.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  padding: 5rem;
+}

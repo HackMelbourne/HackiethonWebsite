@@ -1,9 +1,9 @@
 import { StarryBackground } from "../../components/SpaceScene";
-import styles from "./Updates.module.scss";
+import styles from "./SignUp.module.scss";
 
 import Message from "../../components/Message";
 
-const Updates = () => {
+const SignUp = () => {
   return (
     <>
       <StarryBackground />
@@ -16,4 +16,4 @@ const Updates = () => {
   );
 };
 
-export default Updates;
+export default SignUp;

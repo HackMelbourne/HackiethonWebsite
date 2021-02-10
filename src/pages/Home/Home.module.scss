@@ -1,7 +1,7 @@
 @import "../../styles/styles.scss";
 
 @mixin page {
-  background-color: $primary-dark;
+  background-color: transparent;
   font-size: $font-size-2;
   min-height: 100vh;
 }

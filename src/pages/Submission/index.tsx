@@ -1,19 +1,19 @@
 import { StarryBackground } from "../../components/SpaceScene";
-import styles from "./Updates.module.scss";
+import styles from "./Submission.module.scss";
 
 import Message from "../../components/Message";
 
-const Updates = () => {
+const Submission = () => {
   return (
     <>
       <StarryBackground />
       <div className={styles.container}>
         <Message>
-            Nothing to see here... yet.
+          Nothing to see here <br/> until hackathon starts!
         </Message>
       </div>
     </>
   );
 };
 
-export default Updates;
+export default Submission;

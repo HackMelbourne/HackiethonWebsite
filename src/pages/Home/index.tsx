@@ -12,9 +12,7 @@ interface Props {
 const Home = ({ pageHeight }: Props) => {
   return (
     <>
-      <div className={styles.space}>
-        <SpaceScene />
-      </div>
+      <SpaceScene />
       <div className={styles.scroll}>
         <Scroll pageHeight={pageHeight} />
       </div>

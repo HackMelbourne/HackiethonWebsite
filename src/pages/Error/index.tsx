@@ -1,19 +1,19 @@
 import { StarryBackground } from "../../components/SpaceScene";
-import styles from "./Updates.module.scss";
+import styles from "./Error.module.scss";
 
 import Message from "../../components/Message";
 
-const Updates = () => {
+const Error = () => {
   return (
     <>
       <StarryBackground />
       <div className={styles.container}>
         <Message>
-            Nothing to see here... yet.
+            Page not found...
         </Message>
       </div>
     </>
   );
 };
 
-export default Updates;
+export default Error;
