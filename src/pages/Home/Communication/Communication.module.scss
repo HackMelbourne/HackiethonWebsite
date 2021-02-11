@@ -1,0 +1,60 @@
+@import "../Home.module.scss";
+
+.communication {
+  @include section;
+
+  padding: 6rem;
+}
+
+.channels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 100px;
+
+  margin: 4rem;
+}
+
+.channel {
+  display: flex;
+  flex-direction: column;
+
+  font-size: $font-size-1;
+  border: 2px solid $primary-white;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 40px;
+  background-color: $primary-dark;
+}
+
+.message {
+    // make message take up as much space as possible, leaving minimum space
+    // for button below
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+
+.iconContainer {
+  text-align: center;
+  font-size: $font-size-8;
+}
+
+.buttonContainer {
+    // these two lines make the contained button stretch
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+  font-size: $font-size-1;
+  border: 2px solid $light-blue;
+  border-radius: 50px;
+  margin: 0 1rem;
+  padding: 0.5rem 3rem;
+  background-color: $primary-dark;
+  color: $primary-white;
+
+  &:hover,
+  &:focus {
+    background-color: $light-blue;
+    color: $primary-darker;
+  }
+}

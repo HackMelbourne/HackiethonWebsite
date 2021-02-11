@@ -12,6 +12,17 @@ html {
   scroll-behavior: smooth;
 }
 
+// global default font sizes
+h1 {
+  font-size: $font-size-7;
+}
+h2 {
+  font-size: $font-size-5;
+}
+h3 {
+  font-size: $font-size-3;
+}
+
 body {
   margin: 0;
   font-family: $font-sans;

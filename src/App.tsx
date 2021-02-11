@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Submission from "./pages/Submission";
 import Updates from "./pages/Updates";
 import Sponsors from "./pages/Sponsors";
-import Error from "./pages/Error";
+import PageNotFound from "./pages/PageNotFound";
 import SignUp from "./pages/SignUp";
 
 const App = () => {
@@ -42,7 +42,7 @@ const App = () => {
             </Route>
             <Route>
               {/* matches any other route: page for 404 error: */}
-              <Error />
+              <PageNotFound />
             </Route>
           </Switch>
         </Background>
