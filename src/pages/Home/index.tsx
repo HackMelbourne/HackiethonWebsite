@@ -7,6 +7,8 @@ import Prizes from "./Prizes";
 import Communication from "./Communication";
 import Resources from "./Resources";
 import Schedule from "./Schedule";
+import About from "./About";
+import Rules from "./Rules";
 
 interface Props {
   pageHeight: number;
@@ -20,20 +22,13 @@ const Home = ({ pageHeight }: Props) => {
         <Scroll pageHeight={pageHeight} />
       </div>
       <Title />
+      <About />
       <Schedule />
       <Rules />
       <Communication />
       <Resources />
       <Prizes />
     </>
-  );
-};
-
-const Rules = () => {
-  return (
-    <section id="rules" className={styles.rules}>
-      Rules
-    </section>
   );
 };
 
