@@ -44,17 +44,5 @@
 }
 
 .button {
-  font-size: $font-size-1;
-  border: 2px solid $light-blue;
-  border-radius: 50px;
-  margin: 0 1rem;
-  padding: 0.5rem 3rem;
-  background-color: $primary-dark;
-  color: $primary-white;
-
-  &:hover,
-  &:focus {
-    background-color: $light-blue;
-    color: $primary-darker;
-  }
+  @include button;
 }
