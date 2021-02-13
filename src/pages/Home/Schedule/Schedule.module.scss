@@ -1,0 +1,44 @@
+@import "../Home.module.scss";
+
+.schedule {
+  @include section;
+
+  padding: 6rem;
+
+  h2 {
+    color: $accent-yellow;
+  }
+}
+
+.timetable {
+  font-size: $font-size-0;
+  padding: 1rem 4rem;
+
+  table,
+  th,
+  td {
+    // border: 2px solid white;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 0.5rem 2rem 0.5rem 0rem;
+  }
+
+  tr:last-child {
+  }
+
+  th {
+    // make FRIDAY, SATURDAY, etc. stick to the top left
+    vertical-align: top;
+    text-align: left;
+  }
+}
+
+.bottomBorder {
+  border-bottom: 1px solid white;
+}

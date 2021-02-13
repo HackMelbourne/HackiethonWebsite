@@ -29,11 +29,6 @@
   z-index: 10;
 }
 
-.schedule {
-  @include section;
-  @include darker;
-}
-
 .rules {
   @include section;
 }
