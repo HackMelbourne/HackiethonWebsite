@@ -1,0 +1,53 @@
+@import "../Home.module.scss";
+
+.schedule {
+  @include section;
+
+  padding: 4rem 6rem;
+
+  h2 {
+    color: $accent-yellow;
+  }
+}
+
+.timetable {
+  font-size: $font-size-1;
+  padding: 0rem 4rem;
+
+  table {
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 0.5rem 2rem 0.5rem 0rem;
+  }
+
+  // the first selects the first column, the last two selectors collectively
+  // target the second column in the table
+  th:first-child, th:first-child + td, td:first-child {
+    color: $light-blue;
+    font-weight: normal;
+  }
+
+  th {
+    // make FRIDAY, SATURDAY, etc. stick to the top left
+    vertical-align: top;
+    text-align: left;
+  }
+}
+
+.bottomBorder {
+  border-bottom: 1px solid $blue;
+}
+
+.buttons {
+  padding: 1rem;
+}
+
+// buttons are uniform length here
+.button {
+  @include button;
+  width: 140px;
+  padding: 0.5rem 0rem;
+}

@@ -6,6 +6,7 @@ import Title from "./Title";
 import Prizes from "./Prizes";
 import Communication from "./Communication";
 import Resources from "./Resources";
+import Schedule from "./Schedule";
 
 interface Props {
   pageHeight: number;
@@ -25,14 +26,6 @@ const Home = ({ pageHeight }: Props) => {
       <Resources />
       <Prizes />
     </>
-  );
-};
-
-const Schedule = () => {
-  return (
-    <section id="schedule" className={styles.schedule}>
-      Schedule
-    </section>
   );
 };
 
