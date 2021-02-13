@@ -52,7 +52,7 @@ const Scroll = ({ pageHeight }: Props) => {
           top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
           borderRight: "10px solid #ffffff",
           height: "4.1rem",
-          zIndex: -1,
+          zIndex: 0,
         }}
       />
       <div className={styles.links} ref={ref}>

@@ -21,6 +21,7 @@ const TextBox = ({ children, icon, buttonText }: Props) => {
   );
 };
 
+// TODO: add satellite SVG
 const Communication = () => {
   return (
     <section id="communication" className={styles.communication}>
