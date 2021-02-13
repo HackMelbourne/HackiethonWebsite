@@ -48,15 +48,16 @@ const Scroll = ({ pageHeight }: Props) => {
         style={{
           position: "relative",
           left: "2px",
-          // this is close enough, maybe using rems would be better?
+          // trial and error
           top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
-          borderRight: "10px solid #ffffff",
+          borderRight: "10px solid #ffc059",
           height: "4.1rem",
           zIndex: 0,
         }}
       />
       <div className={styles.links} ref={ref}>
         <a href="#title"><img src={rocket} height="40px" alt="rocket" /></a>
+        <a href="#about">ABOUT</a>
         <a href="#schedule">SCHEDULE</a>
         <a href="#rules">RULES &amp; FAQ</a>
         <a href="#communication">COMMUNICATION</a>
