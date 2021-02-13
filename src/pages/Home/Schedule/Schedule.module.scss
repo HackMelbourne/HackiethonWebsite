@@ -3,7 +3,7 @@
 .schedule {
   @include section;
 
-  padding: 6rem;
+  padding: 4rem 6rem;
 
   h2 {
     color: $accent-yellow;
@@ -11,14 +11,8 @@
 }
 
 .timetable {
-  font-size: $font-size-0;
-  padding: 1rem 4rem;
-
-  table,
-  th,
-  td {
-    // border: 2px solid white;
-  }
+  font-size: $font-size-1;
+  padding: 0rem 4rem;
 
   table {
     border-collapse: collapse;
@@ -29,7 +23,11 @@
     padding: 0.5rem 2rem 0.5rem 0rem;
   }
 
-  tr:last-child {
+  // the first selects the first column, the last two selectors collectively
+  // target the second column in the table
+  th:first-child, th:first-child + td, td:first-child {
+    color: $light-blue;
+    font-weight: normal;
   }
 
   th {
@@ -40,5 +38,16 @@
 }
 
 .bottomBorder {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $blue;
+}
+
+.buttons {
+  padding: 1rem;
+}
+
+// buttons are uniform length here
+.button {
+  @include button;
+  width: 140px;
+  padding: 0.5rem 0rem;
 }

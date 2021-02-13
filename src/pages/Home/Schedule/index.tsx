@@ -78,6 +78,11 @@ const Schedule = () => {
             </tr>
           </tbody>
         </table>
+        <div className={styles.buttons}>
+          <button className={styles.button}>PARTICIPANTS</button>
+          <button className={styles.button}>MENTORS</button>
+          <button className={styles.button}>JUDGES</button>
+        </div>
       </div>
     </section>
   );
