@@ -1,11 +1,7 @@
 @import "../../styles/styles.scss";
 
-.container {
+@mixin section {
   background-color: transparent;
   font-size: $font-size-2;
   min-height: 100vh;
-
-  margin-top: 8rem;
-  display: flex;
-  justify-content: center;
 }

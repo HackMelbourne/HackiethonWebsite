@@ -1,0 +1,12 @@
+@import "../Sponsors.module.scss";
+
+.container {
+  @include section;
+
+  padding: 6rem 12rem;
+
+  h2,
+  h3 {
+    margin: 0;
+  }
+}

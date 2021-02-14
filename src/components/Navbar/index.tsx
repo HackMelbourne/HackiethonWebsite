@@ -67,9 +67,10 @@ const Navbar = () => {
     },
   };
 
+  // href="#" scrolls to top
   return (
     <nav className={styles.navbar}>
-      <Link to="/#title">
+      <Link to="/#">
         <Logo />
       </Link>
       <div className={styles.links}>
@@ -77,7 +78,7 @@ const Navbar = () => {
           UPDATES
         </Link>
         <DropdownLink subLinks={subLinksMap.participants}>
-          <Link to="/participants/#title" className={styles.link}>
+          <Link to="/participants/#" className={styles.link}>
             PARTICIPANTS
           </Link>
         </DropdownLink>

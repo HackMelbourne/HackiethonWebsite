@@ -57,8 +57,8 @@ const Scroll = ({ pageHeight }: Props) => {
         }}
       />
       <div className={styles.links} ref={ref}>
-        <a href="#title"><img src={rocket} height="40px" alt="rocket" /></a>
-        <Link to="/#about" >ABOUT</Link>
+        <a href="#"><img src={rocket} height="40px" alt="rocket" /></a>
+        <a href="#about" >ABOUT</a>
         <a href="#schedule">SCHEDULE</a>
         <a href="#rules">RULES &amp; FAQ</a>
         <a href="#communication">COMMUNICATION</a>

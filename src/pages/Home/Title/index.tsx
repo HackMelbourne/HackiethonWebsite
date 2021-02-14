@@ -9,7 +9,14 @@ const Title = () => {
         <Hero />
       </div>
       <div className={styles.logo}>
-        <img src={logo} alt="HackMelbourne Logo" />
+        <a
+          href="https://hackmelb.org"
+          title="HackMelbourne's website"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={logo} alt="HackMelbourne Logo" />
+        </a>
       </div>
     </section>
   );

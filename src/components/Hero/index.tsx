@@ -11,7 +11,15 @@ const Hero = () => {
         </span>
       </div>
       <div className={styles.subtitle}>
-        Hosted by <span className={styles.highlight}>HackMelbourne</span>
+        Hosted by {" "}
+        <a
+          href="https://hackmelb.org"
+          title="HackMelbourne's website"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className={styles.highlight}>HackMelbourne</span>
+        </a>
       </div>
     </div>
   );

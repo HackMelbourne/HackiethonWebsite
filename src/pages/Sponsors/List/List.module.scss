@@ -1,0 +1,68 @@
+@import "../Sponsors.module.scss";
+
+.container {
+  @include section;
+
+  padding: 6rem 12rem;
+  text-align: center;
+
+  h2,
+  h3 {
+    margin: 0;
+  }
+}
+
+.title {
+  font-size: $font-size-5;
+  color: $accent-yellow;
+}
+
+.highlight {
+  color: $accent-orange;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.company {
+  padding: 2rem;
+
+  img {
+    width: 120px;
+    max-width: 100%;
+    max-height: 120px;
+    height: auto;
+  }
+
+  .name {
+    font-size: $font-size-2;
+    margin-top: 1rem;
+  }
+}
+
+.tier {
+  border-bottom: 1px solid $blue;
+  padding: 2rem;
+
+  .tierTitle {
+    color: $light-blue;
+    font-weight: lighter;
+    font-size: $font-size-4;
+  }
+}
+
+.interestedMessage {
+  margin-top: 2rem;
+
+  a {
+    color: $light-blue;
+    text-decoration: underline;
+
+    &:hover, &:focus {
+      color: $primary-white;
+    }
+  }
+}

@@ -1,12 +1,13 @@
 import { StarryBackground } from "../../components/SpaceScene";
-import styles from "./Sponsors.module.scss";
+import List from "./List";
+import Videos from "./Videos";
 
 const Sponsors = () => {
   return (
     <>
-      <StarryBackground />
-      <div className={styles.container}>
-      </div>
+      <StarryBackground/>
+      <List />
+      <Videos />
     </>
   );
 };
