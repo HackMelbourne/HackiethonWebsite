@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Scroll.module.scss";
-import rocket from "../../assets/rocket-white-45ccw.svg"
+import rocket from "../../assets/rocket-white-45ccw.svg";
+import {HashLink as Link} from "react-router-hash-link";
 
 interface Props {
   pageHeight: number;
@@ -50,14 +51,14 @@ const Scroll = ({ pageHeight }: Props) => {
           left: "2px",
           // trial and error
           top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
-          borderRight: "10px solid #ffffff",
+          borderRight: "10px solid #ffc059",
           height: "4.1rem",
           zIndex: 0,
         }}
       />
       <div className={styles.links} ref={ref}>
         <a href="#title"><img src={rocket} height="40px" alt="rocket" /></a>
-        <a href="#about">ABOUT</a>
+        <Link to="/#about" >ABOUT</Link>
         <a href="#schedule">SCHEDULE</a>
         <a href="#rules">RULES &amp; FAQ</a>
         <a href="#communication">COMMUNICATION</a>
