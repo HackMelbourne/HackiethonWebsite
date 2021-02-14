@@ -64,6 +64,8 @@ const Navbar = () => {
       "PRIZES": "/participants/#prizes",
     },
     sponsors: {
+      "SPONSORS LIST": "/sponsors/#list",
+      "VIDEOS FEATURES": "/sponsors/#videos",
     },
   };
 
@@ -74,7 +76,7 @@ const Navbar = () => {
         <Logo />
       </Link>
       <div className={styles.links}>
-        <Link to="/updates" className={styles.link}>
+        <Link to="/updates/#" className={styles.link}>
           UPDATES
         </Link>
         <DropdownLink subLinks={subLinksMap.participants}>
@@ -82,10 +84,12 @@ const Navbar = () => {
             PARTICIPANTS
           </Link>
         </DropdownLink>
-        <Link to="/sponsors" className={styles.link}>
-          SPONSORS
-        </Link>
-        <Link to="/submission" className={styles.link}>
+        <DropdownLink subLinks={subLinksMap.sponsors}>
+          <Link to="/sponsors/#" className={styles.link}>
+            SPONSORS
+          </Link>
+        </DropdownLink>
+        <Link to="/submission/#" className={styles.link}>
           SUBMISSION
         </Link>
         <Link to="signUp" className={styles.button}>

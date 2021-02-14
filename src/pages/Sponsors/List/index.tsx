@@ -58,7 +58,7 @@ const List = () => {
       <div className={styles.interestedMessage}>
         Interested? Visit the{" "}
         <a
-          href="https://hackmelb.org"
+          href="https://hackmelb.org/sponsors"
           title="HackMelbourne's Sponsorship page"
           target="_blank"
           rel="noopener noreferrer"

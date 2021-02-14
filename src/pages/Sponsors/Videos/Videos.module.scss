@@ -5,8 +5,31 @@
 
   padding: 6rem 12rem;
 
-  h2,
+  h2 {
+    font-size: $font-size-5;
+    color: $accent-yellow;
+  }
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature {
+  margin: 2rem;
+
   h3 {
+    font-size: $font-size-3;
+    font-weight: lighter;
+  }
+  p {
     margin: 0;
+    font-size: $font-size-1;
+
+    a {
+      text-decoration: underline;
+      color: $light-blue;
+    }
   }
 }
