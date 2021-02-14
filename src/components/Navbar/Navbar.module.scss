@@ -6,9 +6,16 @@
   img {
     margin: 0 0.8rem;
   }
-  h3 {
-    margin: 0;
+  .text {
     font-weight: bolder;
+    font-size: $font-size-3;
+    color: $accent-orange;
+  }
+  .subtext {
+    // make text and subtext vertically closer
+    margin-top: -0.4rem;
+    font-size: $font-size-0;
+    color: $primary-white;
   }
 }
 
@@ -41,14 +48,14 @@
 
 .button {
   font-size: $font-size-1;
-  border: 2px solid $light-blue;
+  border: 2px solid $accent-yellow;
   border-radius: 50px;
   margin: 0 1rem;
   padding: 0.5rem 3rem;
 
   &:hover,
   &:focus {
-    background-color: $light-blue;
+    background-color: $accent-yellow;
     color: $primary-darker;
   }
 }

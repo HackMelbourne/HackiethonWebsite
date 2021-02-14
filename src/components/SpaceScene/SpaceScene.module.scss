@@ -16,27 +16,26 @@
   position: absolute;
 }
 
-@function multiple-box-shadow ($n) {
-  $value: '#{random(4000)}px #{random(6000)}px #FFF';
+@function multiple-box-shadow($n) {
+  // hardcoded starfield width and height
+  $value: "#{random(4000)}px #{random(8000)}px #FFF";
   @for $i from 2 through $n {
-    $value: '#{$value} , #{random(4000)}px #{random(6000)}px #FFF';
+    $value: "#{$value} , #{random(4000)}px #{random(8000)}px #FFF";
   }
-  @return unquote($value)
+  @return unquote($value);
 }
 
-$shadows-small:  multiple-box-shadow(2000);
+// number of stars and of what size
+$shadows-small: multiple-box-shadow(2000);
 $shadows-medium: multiple-box-shadow(1000);
-$shadows-large:  multiple-box-shadow(600);
+$shadows-large: multiple-box-shadow(600);
 
 // what does it mean to be a star?
 // It is to be rounded, white, while casting a white shadow
 @mixin star {
   border-radius: 100%;
   background: $primary-white;
-  box-shadow:
-    -4px 0px 10px #ffffff,
-    0px -4px 10px #ffffff,
-    4px 0px 10px #ffffff,
+  box-shadow: -4px 0px 10px #ffffff, 0px -4px 10px #ffffff, 4px 0px 10px #ffffff,
     0px 4px 10px #ffffff;
 }
 

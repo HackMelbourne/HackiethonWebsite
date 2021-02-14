@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 
-import rocket from "../../assets/rocket-white.svg";
+import rocket from "../../assets/rocket-orange.svg";
 
 const Logo = () => {
   return (
     <div className={styles.logo}>
       <img src={rocket} height="60px" alt="rocket" />
-      <h3>
-        Hackiethon
-      </h3>
+      <div>
+        <div className={styles.text}>HACKIEthon</div>
+        <div className={styles.subtext}>by HackMelbourne</div>
+      </div>
     </div>
   );
 };

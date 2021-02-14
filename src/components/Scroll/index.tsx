@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Scroll.module.scss";
-import rocket from "../../assets/rocket-white-45.svg"
+import rocket from "../../assets/rocket-white-45ccw.svg"
 
 interface Props {
   pageHeight: number;
@@ -50,7 +50,7 @@ const Scroll = ({ pageHeight }: Props) => {
           left: "2px",
           // trial and error
           top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
-          borderRight: "10px solid #ffc059",
+          borderRight: "10px solid #ffffff",
           height: "4.1rem",
           zIndex: 0,
         }}
