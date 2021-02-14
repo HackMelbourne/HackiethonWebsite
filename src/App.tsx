@@ -8,6 +8,7 @@ import Updates from "./pages/Updates";
 import Sponsors from "./pages/Sponsors";
 import PageNotFound from "./pages/PageNotFound";
 import SignUp from "./pages/SignUp";
+import Footer from "./components/Footer";
 
 const App = () => {
   // getting the total page height is effectful, this is needed for Scroll
@@ -46,6 +47,7 @@ const App = () => {
             </Route>
           </Switch>
         </Background>
+        <Footer />
       </div>
     </Router>
   );

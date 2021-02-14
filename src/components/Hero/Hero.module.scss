@@ -1,21 +1,27 @@
 @import "../../styles/styles.scss";
 
 .date {
-  // make div not stretch horizontally to fill hero
   display: inline-block;
   background-color: $galaxy-purple;
   font-size: $font-size-4;
-  font-weight: 700;
+  font-weight: bold;
   margin: 0;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .title {
-  font-size: $font-size-7;
   margin: 0;
+  font-size: $font-size-7;
+  font-weight: bold;
+  color: $accent-orange;
 }
 
 .subtitle {
-  font-size: $font-size-3;
   margin: 0;
+  font-size: $font-size-3;
+}
+
+.highlight {
+  color: $accent-yellow;
+  font-weight: bold;
 }

@@ -32,13 +32,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-// links look like normal text then light-blue when hovered (?)
+// links look like normal text then accent-yellow when hovered
 a {
   color: $primary-white;
   text-decoration: none;
   &:hover,
   &:focus {
-    color: $light-blue;
+    color: $accent-yellow;
     text-decoration: none;
   }
 }

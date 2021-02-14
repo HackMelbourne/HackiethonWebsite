@@ -5,6 +5,11 @@
   @include section;
 
   padding: 6rem;
+
+  h2 {
+    text-align: center;
+    color: $accent-yellow;
+  }
 }
 
 .topPrizes {
@@ -28,6 +33,10 @@
     h2,
     h3 {
       margin: 0;
+    }
+
+    h2 {
+      color: $accent-orange;
     }
   }
 }

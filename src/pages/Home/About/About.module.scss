@@ -1,0 +1,11 @@
+@import "../Home.module.scss";
+
+.about {
+  @include section;
+
+  padding: 6rem;
+}
+
+.highlight {
+  color: $accent-orange;
+}

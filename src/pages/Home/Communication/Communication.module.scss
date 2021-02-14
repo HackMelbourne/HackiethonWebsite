@@ -4,6 +4,10 @@
   @include section;
 
   padding: 6rem;
+
+  h2 {
+    color: $accent-yellow;
+  }
 }
 
 .channels {

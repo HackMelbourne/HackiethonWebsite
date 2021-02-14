@@ -13,12 +13,18 @@
   border-right: 4px solid $primary-white;
   text-align: right;
   font-size: $font-size-1;
-  a > img {
-      margin: 0;
-  }
   a {
     // make each anchor "start on a new line"
     display: block;
-    margin: 2rem;
+    margin: 2rem; 
+
+    > img {
+      margin: 0;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-yellow;
+    }
   }
 }

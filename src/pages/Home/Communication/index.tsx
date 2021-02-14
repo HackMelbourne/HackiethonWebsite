@@ -1,5 +1,5 @@
 import styles from "./Communication.module.scss";
-import { FaDiscord, FaEnvelope, FaFacebook } from "react-icons/fa";
+import { FaSlack, FaEnvelope, FaFacebook } from "react-icons/fa";
 
 interface Props {
   children: React.ReactNode;
@@ -25,10 +25,10 @@ const TextBox = ({ children, icon, buttonText }: Props) => {
 const Communication = () => {
   return (
     <section id="communication" className={styles.communication}>
-      <h2>Communication</h2>
+      <h2>Communication Channels</h2>
       <div className={styles.channels}>
-        <TextBox icon={<FaDiscord/>} buttonText="JOIN">
-          We will have a Discord for the hackathon, which will be useful for
+        <TextBox icon={<FaSlack/>} buttonText="JOIN">
+          We will have a Slack for the hackathon, which will be useful for
           team formation and updates!
         </TextBox>
         <TextBox icon={<FaFacebook/>} buttonText="FOLLOW">

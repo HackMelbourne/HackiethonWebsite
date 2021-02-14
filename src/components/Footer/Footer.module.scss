@@ -1,0 +1,19 @@
+@import "../../styles/styles.scss";
+
+.footer {
+  width: 100%;
+  background-color: $primary-darker;
+
+  // hack to make starfield appear behind the footer
+  position: relative;
+}
+
+.links {
+  padding: 2rem;
+  display: flex;
+  margin: 0 8rem;
+  justify-content: space-evenly;
+  a {
+    font-size: $font-size-6;
+  }
+}

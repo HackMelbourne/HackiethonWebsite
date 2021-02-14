@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Scroll.module.scss";
-import rocket from "../../assets/rocket-white-45.svg"
+import rocket from "../../assets/rocket-white-45ccw.svg"
 
 interface Props {
   pageHeight: number;
@@ -48,7 +48,7 @@ const Scroll = ({ pageHeight }: Props) => {
         style={{
           position: "relative",
           left: "2px",
-          // this is close enough, maybe using rems would be better?
+          // trial and error
           top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
           borderRight: "10px solid #ffffff",
           height: "4.1rem",
@@ -57,6 +57,7 @@ const Scroll = ({ pageHeight }: Props) => {
       />
       <div className={styles.links} ref={ref}>
         <a href="#title"><img src={rocket} height="40px" alt="rocket" /></a>
+        <a href="#about">ABOUT</a>
         <a href="#schedule">SCHEDULE</a>
         <a href="#rules">RULES &amp; FAQ</a>
         <a href="#communication">COMMUNICATION</a>
