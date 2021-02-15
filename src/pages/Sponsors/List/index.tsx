@@ -36,7 +36,7 @@ const List = () => {
   return (
     <section id="list" className={styles.container}>
       <h2 className={styles.title}>
-        <span className={styles.highlight}>HACKIEthon</span> 2021 Sponsors
+        <span className={styles.highlight}>Hackiethon</span> 2021 Sponsors
       </h2>
       <Tier title="Diamond Sponsors">
         <Company src={logo} name="Company name" href="https://www.google.com" />

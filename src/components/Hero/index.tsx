@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div>
       <span className={styles.date}>2 - 5 April 2021</span>
-      <h1 className={styles.title}>HACKIEthon</h1>
+      <h1 className={styles.title}>Hackiethon</h1>
       <div className={styles.subtitle}>
         <span className={styles.highlight}>
           Melbourne's Premier Rookie Hackathon

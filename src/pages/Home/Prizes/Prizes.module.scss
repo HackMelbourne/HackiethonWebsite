@@ -7,6 +7,7 @@
   padding: 6rem;
 
   h2 {
+    font-size: $font-size-5;
     text-align: center;
     color: $accent-yellow;
   }
@@ -16,51 +17,80 @@
   display: flex;
   justify-content: space-evenly;
 
-  // let CSS scale image down (but not up) if needed
-  img {
-    width: 300px;
-    max-width: 100%;
-    max-height: 300px;
-    height: auto;
+  margin-bottom: 2rem;
+}
+
+@mixin topPrize($imgPath) {
+  background-image: url($imgPath);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  h3 {
+    font-size: $font-size-3;
+    margin: 0;
   }
-
-  .prizeDescription {
-    text-align: center;
-    position: relative;
-    bottom: 100px;
-    right: 20px;
-
-    h2,
-    h3 {
-      margin: 0;
-    }
-
-    h2 {
-      color: $accent-orange;
-    }
+  span {
+    font-size: $font-size-5;
+    font-weight: bold;
+    color: $accent-orange;
   }
 }
+
+.prize1 {
+  @include topPrize("../../../assets/prize1.svg");
+  width: 350px;
+  height: 320px;
+}
+
+.prize2 {
+  @include topPrize("../../../assets/prize2.svg");
+  width: 300px;
+}
+
+.prize3 {
+  @include topPrize("../../../assets/prize3.svg");
+  width: 300px;
+}
+
 
 .honourableMentions {
   display: flex;
   justify-content: space-evenly;
+}
 
-  img {
-    height: 200px;
-    max-width: 100%;
-    max-height: 300px;
-    width: auto;
+@mixin honourableMention($imgPath) {
+  background-image: url($imgPath);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+
+  display: flex;
+  flex-direction: row;
+
+  // vertically centered, horizontally aligned to the right
+  justify-content: flex-end;
+  align-items: center;
+
+  h3 {
+    margin: 0;
+    font-size: $font-size-3;
+    padding: 3rem;
   }
+}
 
-  .prizeDescription {
-    text-align: left;
-    position: relative;
-    left: 150px;
-    bottom: 150px;
+.prize4 {
+  @include honourableMention("../../../assets/prize4.svg");
+  width: 450px;
+}
 
-    h2,
-    h3 {
-      margin: 0;
-    }
-  }
+.prize5 {
+  @include honourableMention("../../../assets/prize5.svg");
+  width: 450px;
 }

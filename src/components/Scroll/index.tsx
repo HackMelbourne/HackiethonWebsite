@@ -47,11 +47,12 @@ const Scroll = ({ pageHeight }: Props) => {
     <nav>
       <div
         style={{
+          // trial and error adjustments
           position: "relative",
-          left: "2px",
-          // trial and error
+          width: "10px",
+          backgroundColor: "#ffffff",
+          left: "199px",
           top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
-          borderRight: "10px solid #ffc059",
           height: "4.1rem",
           zIndex: 0,
         }}

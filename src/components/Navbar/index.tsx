@@ -9,7 +9,7 @@ const Logo = () => {
     <div className={styles.logo}>
       <img src={rocket} height="60px" alt="rocket" />
       <div>
-        <div className={styles.text}>HACKIEthon</div>
+        <div className={styles.text}>Hackiethon</div>
         <div className={styles.subtext}>by HackMelbourne</div>
       </div>
     </div>
