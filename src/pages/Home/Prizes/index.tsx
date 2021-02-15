@@ -1,6 +1,4 @@
 import styles from "./Prizes.module.scss";
-import prize4 from "../../../assets/prize4.svg";
-import prize5 from "../../../assets/prize5.svg";
 
 const Prizes = () => {
   return (

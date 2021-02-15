@@ -2,12 +2,6 @@
 
 .communication {
   @include section;
-
-  padding: 6rem;
-
-  h2 {
-    color: $accent-yellow;
-  }
 }
 
 .channels {
@@ -30,10 +24,10 @@
 }
 
 .message {
-    // make message take up as much space as possible, leaving minimum space
-    // for button below
-    flex-grow: 1;
-    margin-bottom: 2rem;
+  // make message take up as much space as possible, leaving minimum space
+  // for button below
+  flex-grow: 1;
+  margin-bottom: 2rem;
 }
 
 .iconContainer {
@@ -42,9 +36,9 @@
 }
 
 .buttonContainer {
-    // these two lines make the contained button stretch
-    display: flex;
-    flex-direction: column;
+  // these two lines make the contained button stretch
+  display: flex;
+  flex-direction: column;
 }
 
 .button {

@@ -1,7 +1,7 @@
 import { HashLink as Link } from "react-router-hash-link";
 import styles from "./Navbar.module.scss";
 
-import rocket from "../../assets/rocket-orange.svg";
+import rocket from "../../assets/rocket-yellow.svg";
 import { useState } from "react";
 
 const Logo = () => {

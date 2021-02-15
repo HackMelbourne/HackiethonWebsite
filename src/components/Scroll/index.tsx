@@ -50,7 +50,7 @@ const Scroll = ({ pageHeight }: Props) => {
           // trial and error adjustments
           position: "relative",
           width: "10px",
-          backgroundColor: "#ffffff",
+          backgroundColor: "#ffc059",
           left: "199px",
           top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
           height: "4.1rem",

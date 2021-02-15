@@ -2,12 +2,13 @@
 
 .schedule {
   @include section;
+}
 
-  padding: 4rem 6rem;
+.content {
+  display: flex;
+}
 
-  h2 {
-    color: $accent-yellow;
-  }
+.satellite {
 }
 
 .timetable {

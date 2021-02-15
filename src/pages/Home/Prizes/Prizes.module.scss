@@ -4,12 +4,9 @@
 .prizes {
   @include section;
 
-  padding: 6rem;
-
   h2 {
     font-size: $font-size-5;
     text-align: center;
-    color: $accent-yellow;
   }
 }
 
