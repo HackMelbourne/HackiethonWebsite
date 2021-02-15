@@ -4,8 +4,19 @@
   @include section;
 
   padding: 6rem;
+
+  h2 {
+    font-size: $font-size-5;
+    color: $primary-white;
+  }
 }
 
 .highlight {
-  color: $accent-orange;
+  color: $accent-yellow;
+}
+
+.content {
+  margin-top: 5rem;
+  line-height: 2.5rem;
+  margin-right: 14rem;
 }

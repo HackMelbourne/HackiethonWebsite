@@ -4,6 +4,13 @@
   background-color: transparent;
   font-size: $font-size-2;
   min-height: 100vh;
+
+  padding: 6rem;
+
+  h2 {
+    color: $accent-yellow;
+    font-size: $font-size-3;
+  }
 }
 
 // to be used to style a <button />
@@ -29,17 +36,13 @@
   z-index: 10;
 }
 
-.rules {
-  @include section;
-}
-
 .space {
   z-index: 0;
 }
 
 .scroll {
   position: fixed;
-  right: 100px;
+  right: 50px;
   bottom: 20px;
   z-index: 20;
 }

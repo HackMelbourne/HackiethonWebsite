@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Scroll.module.scss";
-import rocket from "../../assets/rocket-white-45ccw.svg"
+import rocket from "../../assets/rocket-white-45ccw.svg";
+import {HashLink as Link} from "react-router-hash-link";
 
 interface Props {
   pageHeight: number;
@@ -46,23 +47,25 @@ const Scroll = ({ pageHeight }: Props) => {
     <nav>
       <div
         style={{
+          // trial and error adjustments
           position: "relative",
-          left: "2px",
-          // trial and error
+          width: "10px",
+          backgroundColor: "#ffc059",
+          left: "199px",
           top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
-          borderRight: "10px solid #ffffff",
           height: "4.1rem",
           zIndex: 0,
         }}
       />
       <div className={styles.links} ref={ref}>
-        <a href="#title"><img src={rocket} height="40px" alt="rocket" /></a>
-        <a href="#about">ABOUT</a>
-        <a href="#schedule">SCHEDULE</a>
-        <a href="#rules">RULES &amp; FAQ</a>
-        <a href="#communication">COMMUNICATION</a>
-        <a href="#resources">RESOURCES</a>
-        <a href="#prizes">PRIZES</a>
+        {/* these resolve to html <a/>'s */}
+        <Link to="/#"><img src={rocket} height="40px" alt="rocket" /></Link>
+        <Link to="/#about" >ABOUT</Link>
+        <Link to="/#schedule">SCHEDULE</Link>
+        <Link to="/#rules">RULES &amp; FAQ</Link>
+        <Link to="/#communication">COMMUNICATION</Link>
+        <Link to="/#resources">RESOURCES</Link>
+        <Link to="/#prizes">PRIZES</Link>
       </div>
     </nav>
   );

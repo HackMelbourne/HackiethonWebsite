@@ -1,14 +1,5 @@
 @import "../../styles/styles.scss";
 
-.thumb {
-  position: relative;
-  left: 2px;
-  top: 60px;
-  border-right: 10px solid $primary-white;
-  height: 40px;
-  z-index: -1;
-}
-
 .links {
   border-right: 4px solid $primary-white;
   text-align: right;
