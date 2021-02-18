@@ -92,7 +92,7 @@ const Navbar = () => {
         <Link to="/submission/#" className={styles.link}>
           SUBMISSION
         </Link>
-        <Link to="signUp" className={styles.button}>
+        <Link to="/signUp" className={styles.button}>
           SIGN UP
         </Link>
       </div>

@@ -5,12 +5,15 @@
 }
 
 .hero {
-  position: absolute;
-  left: 200px;
-  bottom: 150px;
+  @include desktop {
+    position: absolute;
+    left: 200px;
+    bottom: 150px;
+  }
 }
 
 .logo {
+  @include remove-on-phone;
   position: absolute;
   right: 100px;
   top: 120px;

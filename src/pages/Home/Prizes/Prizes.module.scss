@@ -13,16 +13,23 @@
 .topPrizes {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+  }
 
   margin-bottom: 2rem;
 }
 
 @mixin topPrize($imgPath) {
-  background-image: url($imgPath);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% auto;
-
+  // on mobile don't bother with images
+  @include desktop {
+    background-image: url($imgPath);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+  }
   text-align: center;
 
   display: flex;
@@ -42,8 +49,13 @@
 
 .prize1 {
   @include topPrize("../../../assets/prize1.svg");
-  width: 350px;
-  height: 320px;
+
+  // if on mobile just make the planets the same size
+  width: 300px;
+  @include desktop {
+    width: 350px;
+    height: 320px;
+  }
 }
 
 .prize2 {
@@ -56,23 +68,32 @@
   width: 300px;
 }
 
-
 .honourableMentions {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  @include tablet-landscape {
+    flex-direction: row;
+  }
 }
 
 @mixin honourableMention($imgPath) {
-  background-image: url($imgPath);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% auto;
+  @include desktop {
+    background-image: url($imgPath);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+  }
 
   display: flex;
   flex-direction: row;
 
+
   // vertically centered, horizontally aligned to the right
-  justify-content: flex-end;
+  @include desktop {
+    justify-content: flex-end;
+  }
   align-items: center;
 
   h3 {
@@ -84,10 +105,14 @@
 
 .prize4 {
   @include honourableMention("../../../assets/prize4.svg");
-  width: 450px;
+  @include desktop {
+    width: 450px;
+  }
 }
 
 .prize5 {
   @include honourableMention("../../../assets/prize5.svg");
-  width: 450px;
+  @include desktop {
+    width: 450px;
+  }
 }

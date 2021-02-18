@@ -1,5 +1,9 @@
 @import "../../styles/styles.scss";
 
+.scene {
+  @include remove-on-phone;
+}
+
 .rocket {
   position: absolute;
   right: 300px;
