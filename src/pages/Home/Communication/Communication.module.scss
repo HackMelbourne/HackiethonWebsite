@@ -5,15 +5,19 @@
 }
 
 .channels {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 100px;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 100px;
+  display: flex;
+  justify-content: space-between;
 
-  margin: 4rem;
+  margin-right: 10rem;
 }
 
 .channel {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 0;
 
   font-size: $font-size-1;
   border: 2px solid $primary-white;

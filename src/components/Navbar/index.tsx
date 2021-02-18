@@ -56,16 +56,16 @@ const DropdownLink = ({ children, subLinks }: Props) => {
 const Navbar = () => {
   const subLinksMap = {
     participants: {
-      "ABOUT": "/participants/#about",
-      "SCHEDULE": "/participants/#schedule",
-      "RULES & FAQ": "/participants/#rules",
-      "COMMUNICATION": "/participants/#communication",
-      "RESOURCES": "/participants/#resources",
-      "PRIZES": "/participants/#prizes",
+      "ABOUT": "/#about",
+      "SCHEDULE": "/#schedule",
+      "RULES & FAQ": "/#rules",
+      "COMMUNICATION": "/#communication",
+      "RESOURCES": "/#resources",
+      "PRIZES": "/#prizes",
     },
     sponsors: {
       "SPONSORS LIST": "/sponsors/#list",
-      "VIDEOS FEATURES": "/sponsors/#videos",
+      "VIDEO FEATURES": "/sponsors/#videos",
     },
   };
 
@@ -80,7 +80,7 @@ const Navbar = () => {
           UPDATES
         </Link>
         <DropdownLink subLinks={subLinksMap.participants}>
-          <Link to="/participants/#" className={styles.link}>
+          <Link to="/#" className={styles.link}>
             PARTICIPANTS
           </Link>
         </DropdownLink>

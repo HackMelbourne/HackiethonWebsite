@@ -26,7 +26,7 @@ const App = () => {
         <Background>
           <Navbar />
           <Switch>
-            <Route exact path={["/", "/participants"]}>
+            <Route exact path="/">
               <Home pageHeight={pageHeight} />
             </Route>
             <Route path="/updates">

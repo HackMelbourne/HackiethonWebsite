@@ -11,11 +11,14 @@
   }
 }
 
-.highlight {
+.highlight1 {
   color: $accent-yellow;
+  font-weight: bold;
 }
 
 .content {
+  background-color: $primary-dark;
+  font-size: $font-size-2;
   margin-top: 5rem;
   line-height: 2.5rem;
   margin-right: 14rem;

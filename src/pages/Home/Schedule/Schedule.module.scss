@@ -8,12 +8,10 @@
   display: flex;
 }
 
-.satellite {
-}
-
 .timetable {
   font-size: $font-size-0;
   padding: 0rem 4rem;
+  background-color: $primary-dark;
 
   table {
     border-collapse: collapse;

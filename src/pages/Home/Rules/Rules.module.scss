@@ -3,3 +3,22 @@
 .rules {
   @include section;
 }
+
+.content {
+  margin: 2rem 10rem 2rem 2rem;
+}
+
+.table {
+  background-color: $primary-dark;
+  font-size: $font-size-1;
+  border-collapse: collapse;
+
+  tr>:first-child {
+    color: $light-blue;
+  }
+
+  td {
+    border-bottom: 1px solid $blue;
+    padding: 0.8rem;
+  }
+}
