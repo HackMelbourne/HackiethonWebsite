@@ -21,8 +21,9 @@
   right: 0;
   z-index: 20;
 
-  // menu is slid in if not open
   transition: transform 0.1s ease-in-out;
+
+  // menu is slid in if not open
   transform: translateX(100%);
 
   a {

@@ -34,8 +34,7 @@ $shadows-small: multiple-box-shadow(2000);
 $shadows-medium: multiple-box-shadow(1000);
 $shadows-large: multiple-box-shadow(600);
 
-// what does it mean to be a star?
-// It is to be rounded, white, while casting a white shadow
+// A rounded, white div casting a white shadow looks like a star
 @mixin star {
   border-radius: 100%;
   background: $primary-white;
@@ -48,7 +47,6 @@ $shadows-large: multiple-box-shadow(600);
   width: 1px;
   height: 1px;
   border-radius: 100%;
-  // background: transparent;
   box-shadow: $shadows-small;
 }
 
@@ -57,7 +55,6 @@ $shadows-large: multiple-box-shadow(600);
   width: 2px;
   height: 2px;
   border-radius: 100%;
-  // background: transparent;
   box-shadow: $shadows-medium;
 }
 
@@ -66,7 +63,6 @@ $shadows-large: multiple-box-shadow(600);
   width: 3px;
   height: 3px;
   border-radius: 100%;
-  // background: transparent;
   box-shadow: $shadows-large;
 }
 

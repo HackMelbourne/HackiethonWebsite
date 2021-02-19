@@ -5,7 +5,9 @@
 }
 
 .hero {
+  padding-top: 5rem;
   @include desktop {
+    padding-top: 0;
     position: absolute;
     left: 200px;
     bottom: 150px;

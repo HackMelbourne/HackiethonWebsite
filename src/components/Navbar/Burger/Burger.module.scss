@@ -51,7 +51,7 @@
 }
 
 // turn from burger to "X":
-// top bar becomes \, bottom bar becomes /, and middle disappears
+// top bar becomes \, bottom bar becomes /, and middle slides and disappears
 .open {
   div {
     &:first-child {

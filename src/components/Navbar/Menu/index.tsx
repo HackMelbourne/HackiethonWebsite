@@ -5,8 +5,8 @@ interface Props {
   open: boolean;
 }
 
+// Menu has no dropdown functionality - can't hover on mobile
 const Menu = ({ open }: Props) => {
-  // the three empty div's are the bars that make up the burger
   return (
     <nav className={open ? `${styles.menu} ${styles.open}` : styles.menu}>
       <Link to="/updates">UPDATES</Link>

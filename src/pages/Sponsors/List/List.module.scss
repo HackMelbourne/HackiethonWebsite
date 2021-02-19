@@ -3,7 +3,10 @@
 .container {
   @include section;
 
-  padding: 6rem 12rem;
+  padding-top: 6rem;
+  @include desktop {
+    padding: 6rem 12rem;
+  }
   text-align: center;
 
   h2,
@@ -28,7 +31,11 @@
 }
 
 .company {
-  padding: 2rem;
+
+  padding: 1rem;
+  @include desktop {
+    padding: 2rem;
+  }
 
   img {
     width: 120px;
@@ -55,7 +62,7 @@
 }
 
 .interestedMessage {
-  margin-top: 2rem;
+  margin: 1rem;
 
   a {
     color: $light-blue;
