@@ -1,0 +1,36 @@
+@mixin phone {
+    @media (min-width: 320px) {
+        @content;
+    }
+}
+
+@mixin tablet-portrait {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin tablet-landscape {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin large_desktop {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin remove-on-phone {
+    display: none;
+    @include desktop {
+        display: unset;
+    }
+}

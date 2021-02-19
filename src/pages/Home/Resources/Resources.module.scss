@@ -7,8 +7,12 @@
 .packs {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+    margin: 0rem 8rem 0rem 4rem;
+  }
 
-  margin: 0rem 8rem 0rem 4rem;
 }
 
 .pack {
@@ -16,8 +20,12 @@
   flex-direction: column;
 
   font-size: $font-size-1;
-  padding: 2rem;
-  margin: 2rem;
+
+  margin-bottom: 2rem;
+  @include desktop {
+    padding: 2rem;
+    margin: 2rem;
+  }
   border-radius: 40px;
 
   h3 {
@@ -34,6 +42,7 @@
   }
 
   img {
+    @include remove-on-phone;
     height: 200px;
     max-width: 100%;
     max-height: 300px;

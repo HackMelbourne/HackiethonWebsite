@@ -5,12 +5,17 @@
 }
 
 .hero {
-  position: absolute;
-  left: 200px;
-  bottom: 150px;
+  padding-top: 5rem;
+  @include desktop {
+    padding-top: 0;
+    position: absolute;
+    left: 200px;
+    bottom: 150px;
+  }
 }
 
 .logo {
+  @include remove-on-phone;
   position: absolute;
   right: 100px;
   top: 120px;

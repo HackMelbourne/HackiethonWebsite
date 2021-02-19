@@ -28,7 +28,10 @@
   background-color: $primary-darker;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-size: $font-size-2;
-  padding: 1rem 12rem;
+  padding: 1rem;
+  @include desktop {
+    padding: 1rem 12rem;
+  }
 
   // appears in front of other elements
   z-index: 20;
@@ -45,6 +48,7 @@
   font-size: $font-size-1;
   margin: 0 1rem;
   padding: 0.5rem;
+  @include remove-on-phone;
 }
 
 .button {
@@ -59,6 +63,7 @@
     background-color: $accent-yellow;
     color: $primary-darker;
   }
+  @include remove-on-phone;
 }
 
 .dropdownMenu {
@@ -84,4 +89,8 @@
       }
     }
   }
+}
+
+.mobileNav {
+  display: flex;
 }

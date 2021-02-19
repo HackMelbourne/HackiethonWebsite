@@ -10,8 +10,10 @@
 
 .links {
   padding: 2rem;
+  @include desktop {
+    margin: 0 8rem;
+  }
   display: flex;
-  margin: 0 8rem;
   justify-content: space-evenly;
   a {
     font-size: $font-size-6;

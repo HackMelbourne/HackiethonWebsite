@@ -16,7 +16,7 @@ const StarryBackground = () => {
 
 const SpaceScene = () => {
   return (
-    <div>
+    <div className={styles.scene}>
       <div className={styles.rocket}>
         <img src={rocket} height="250px" alt="rocket" />
       </div>
@@ -26,7 +26,6 @@ const SpaceScene = () => {
       <div className={styles.planet2}>
         <img src={planet2} alt="blue planet" />
       </div>
-      <StarryBackground />
       <div className={styles.star1} />
       <div className={styles.star2} />
       <div className={styles.star3} />

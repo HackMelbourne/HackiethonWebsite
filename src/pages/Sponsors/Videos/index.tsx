@@ -20,12 +20,14 @@ const Videos = () => {
       <h2>Sponsor Video Features</h2>
       <div className={styles.features}>
         <div className={styles.feature}>
-          <ReactPlayer
-            width="500px"
-            height="300px"
-            url="https://www.youtube.com/watch?v=BggrpKfqh1c"
-            controls={true}
-          />
+          <div className={styles.video}>
+            <ReactPlayer
+              width="100%"
+              height="100%"
+              url="https://www.youtube.com/watch?v=BggrpKfqh1c"
+              controls={true}
+            />
+          </div>
           <h3>Company Name</h3>
           <p>
             More information{" "}
@@ -34,7 +36,9 @@ const Videos = () => {
           </p>
         </div>
         <div className={styles.feature}>
-          <video width="500px" height="300px" src={video1} controls />
+          <div className={styles.video}>
+            <video width="100%" height="100%" src={video1} controls />
+          </div>
           <h3>Company Name</h3>
           <p>
             More information{" "}
@@ -42,7 +46,9 @@ const Videos = () => {
           </p>
         </div>
         <div className={styles.feature}>
-          <video width="500px" height="300px" src={video1} controls />
+          <div className={styles.video}>
+            <video width="100%" height="100%" src={video1} controls />
+          </div>
           <h3>Company Name</h3>
           <p>
             More information{" "}
@@ -50,12 +56,14 @@ const Videos = () => {
           </p>
         </div>
         <div className={styles.feature}>
-          <ReactPlayer
-            width="500px"
-            height="300px"
-            url="https://www.youtube.com/watch?v=BggrpKfqh1c"
-            controls={true}
-          />
+          <div className={styles.video}>
+            <ReactPlayer
+              width="100%"
+              height="100%"
+              url="https://www.youtube.com/watch?v=BggrpKfqh1c"
+              controls={true}
+            />
+          </div>
           <h3>Company Name</h3>
           <p>
             More information{" "}
@@ -64,12 +72,14 @@ const Videos = () => {
           </p>
         </div>
         <div className={styles.feature}>
-          <ReactPlayer
-            width="500px"
-            height="300px"
-            url="https://www.youtube.com/watch?v=BggrpKfqh1c"
-            controls={true}
-          />
+          <div className={styles.video}>
+            <ReactPlayer
+              width="100%"
+              height="100%"
+              url="https://www.youtube.com/watch?v=BggrpKfqh1c"
+              controls={true}
+            />
+          </div>
           <h3>Company Name</h3>
           <p>
             More information{" "}

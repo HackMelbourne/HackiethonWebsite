@@ -2,7 +2,9 @@ import { HashLink as Link } from "react-router-hash-link";
 import styles from "./Navbar.module.scss";
 
 import rocket from "../../assets/rocket-yellow.svg";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import Burger from "./Burger";
+import Menu from "./Menu";
 
 const Logo = () => {
   return (
@@ -53,7 +55,32 @@ const DropdownLink = ({ children, subLinks }: Props) => {
   );
 };
 
+// React Ref magic to detect raw events to trigger a function
+const useOnClickOutside = (
+  ref: React.RefObject<HTMLDivElement>,
+  handler: React.Dispatch<React.SetStateAction<boolean>>
+) => {
+  useEffect(() => {
+    const listener = (event: any) => {
+      if (!ref.current || ref.current.contains(event.target)) {
+        return;
+      }
+      handler(event);
+    };
+    document.addEventListener("mousedown", listener);
+    return () => {
+      document.removeEventListener("mousedown", listener);
+    };
+  }, [ref, handler]);
+};
+
 const Navbar = () => {
+  // this is for the menu on mobile
+  const [open, setOpen] = useState(false);
+
+  const ref = useRef<HTMLDivElement>(null);
+  useOnClickOutside(ref, () => setOpen(false));
+
   const subLinksMap = {
     participants: {
       "ABOUT": "/#about",
@@ -92,9 +119,13 @@ const Navbar = () => {
         <Link to="/submission/#" className={styles.link}>
           SUBMISSION
         </Link>
-        <Link to="signUp" className={styles.button}>
+        <Link to="/signUp#" className={styles.button}>
           SIGN UP
         </Link>
+      </div>
+      <div className={styles.mobileNav} ref={ref}>
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} />
       </div>
     </nav>
   );

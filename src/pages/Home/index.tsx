@@ -1,5 +1,5 @@
 import Scroll from "../../components/Scroll";
-import SpaceScene from "../../components/SpaceScene";
+import SpaceScene, { StarryBackground } from "../../components/SpaceScene";
 import styles from "./Home.module.scss";
 
 import Title from "./Title";
@@ -17,6 +17,7 @@ interface Props {
 const Home = ({ pageHeight }: Props) => {
   return (
     <>
+      <StarryBackground />
       <SpaceScene />
       <div className={styles.scroll}>
         <Scroll pageHeight={pageHeight} />

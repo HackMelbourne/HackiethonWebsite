@@ -10,11 +10,19 @@
 }
 
 .text {
-  font-size: $font-size-2;
+  h2 {
+    font-size: $font-size-2;
+  }
   text-align: center;
-  background-image: url("../../assets/long-blob.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% auto;
-  padding: 5rem;
+
+  @include desktop {
+    h2 {
+      font-size: $font-size-4;
+    }
+    padding: 5rem;
+    background-image: url("../../assets/long-blob.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+  }
 }

@@ -4,13 +4,19 @@
   @include section;
 }
 
+.satellite {
+  @include remove-on-phone;
+}
+
 .content {
   display: flex;
 }
 
 .timetable {
   font-size: $font-size-0;
-  padding: 0rem 4rem;
+  @include desktop {
+    padding: 0rem 4rem;
+  }
   background-color: $primary-dark;
 
   table {
@@ -49,4 +55,5 @@
   @include button;
   width: 140px;
   padding: 0.5rem 0rem;
+  margin: 0.5rem;
 }

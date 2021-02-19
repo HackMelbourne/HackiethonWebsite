@@ -3,8 +3,6 @@
 .container {
   @include section;
 
-  padding: 6rem 12rem;
-
   h2 {
     font-size: $font-size-3;
     color: $accent-yellow;
@@ -17,11 +15,22 @@
 }
 
 .feature {
-  margin: 2rem;
+  margin: 2rem 0;
+  @include desktop {
+    margin: 2rem;
+  }
+
+  .video {
+    @include desktop {
+      width: 500px;
+      height: 300px;
+    }
+  }
 
   h3 {
     font-size: $font-size-3;
     font-weight: lighter;
+    margin: 0;
   }
   p {
     margin: 0;

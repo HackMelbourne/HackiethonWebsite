@@ -5,7 +5,10 @@
 }
 
 .content {
-  margin: 2rem 10rem 2rem 2rem;
+  // on desktop need right margin to account for scroll component
+  @include desktop {
+    margin: 2rem 10rem 2rem 2rem;
+  }
 }
 
 .table {
