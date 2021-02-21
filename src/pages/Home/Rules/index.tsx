@@ -70,8 +70,9 @@ const Rules = () => {
             <td>
               <p>
                 Yes! If you don’t have a team, hop on over to our Slack to
-                connect with others looking for a team. Instructions on using
-                the Slack can be found <Link to="/slack#">here</Link>.
+                connect with others looking for a team.
+                {/* Instructions on using
+                the Slack can be found <Link to="/slack#">here</Link>. */}
               </p>
               <p>
                 If you find a team after you have signed up, you can edit your
