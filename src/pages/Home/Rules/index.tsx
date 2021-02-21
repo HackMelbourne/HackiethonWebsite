@@ -19,6 +19,14 @@ const Rules = () => {
             </td>
           </tr>
           <tr>
+            <td>
+              Is there a theme for Hackiethon?
+            </td>
+            <td>
+              Yes! It will be revealed at the start of the event.
+            </td>
+          </tr>
+          <tr>
             <td>Who can participate?</td>
             <td>
               Anyone who is considered a hackathon Rookie is welcome to
@@ -34,16 +42,15 @@ const Rules = () => {
           </tr>
           <tr>
             <td>
-              I've completed more than one hackathon, can I still take part in
-              Hackiethon?
+              I've completed more than one hackathon, can I still take part?
             </td>
             <td>
-              You can still take part in Hackiethon, however, you will not be
-              eligible for prizes. We do this to provide a more accessible and
-              less intimidating experience for our participants.If you have
-              experience with Hackathons, you can become a mentor and help guide
-              teams towards a successful project! More information about
-              mentorship and how to sign up coming soon.
+              Yes, however, you will not be eligible for prizes. We do this
+              to provide a more accessible and less intimidating experience
+              for our participants. If you have experience with Hackathons,
+              you can become a mentor and help guide teams towards a
+              successful project! More information about mentorship and how
+              to sign up coming soon.
             </td>
           </tr>
           <tr>
@@ -91,14 +98,6 @@ const Rules = () => {
               </p>
             </td>
           </tr>
-          {/* <tr>
-            <td>
-              What is the theme?
-            </td>
-            <td>
-              It's a secret! 
-            </td>
-          </tr> */}
         </table>
       </div>
     </section>

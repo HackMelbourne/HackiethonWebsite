@@ -21,7 +21,7 @@ const SponsorsTemp = () => {
       <StarryBackground />
       <div className={styles.container}>
         <Message>
-            Nothing to see here... yet.
+          Coming soon!
         </Message>
       </div>
     </>
