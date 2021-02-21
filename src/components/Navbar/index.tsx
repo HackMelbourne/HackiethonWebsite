@@ -18,7 +18,7 @@ const Logo = () => {
   );
 };
 
-// a typed object in JS: string attributes to string values, like a Map
+// a typed JS object: string attributes to string values, like a Map
 type StringMap = { [label: string]: string };
 
 interface Props {
@@ -78,9 +78,11 @@ const Navbar = () => {
   // this is for the menu on mobile
   const [open, setOpen] = useState(false);
 
+  // when the user clicks/taps outside the open Menu, it closes.
   const ref = useRef<HTMLDivElement>(null);
   useOnClickOutside(ref, () => setOpen(false));
 
+  // map dropdown labels to href's
   const subLinksMap = {
     participants: {
       "ABOUT": "/#about",

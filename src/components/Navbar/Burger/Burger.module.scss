@@ -2,9 +2,6 @@
 
 // burgerWrapper haha
 .burgerWrapper {
-  @include desktop {
-    display: none;
-  }
   padding: 1rem;
   z-index: 30;
 }
