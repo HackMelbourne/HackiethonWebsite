@@ -7,15 +7,15 @@ const Prizes = () => {
       <div className={styles.topPrizes}>
         <div className={styles.prize1}>
           <h3>First Place</h3>
-          <span>AUD$500</span>
+          <span>TBA</span>
         </div>
         <div className={styles.prize2}>
           <h3>Second Place</h3>
-          <span>AUD$300</span>
+          <span>TBA</span>
         </div>
         <div className={styles.prize3}>
           <h3>Third Place</h3>
-          <span>AUD$100</span>
+          <span>TBA</span>
         </div>
       </div>
       <div className={styles.honourableMentions}>

@@ -13,9 +13,9 @@
 }
 
 .timetable {
-  font-size: $font-size-0;
+  font-size: $font-size-1;
   @include desktop {
-    padding: 0rem 4rem;
+    padding: 2rem 2rem;
   }
   background-color: $primary-dark;
 
@@ -53,7 +53,6 @@
 // buttons are uniform length here
 .button {
   @include button;
-  width: 140px;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 1rem;
   margin: 0.5rem;
 }

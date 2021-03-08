@@ -7,7 +7,7 @@ const Hero = () => {
       <h1 className={styles.title}>Hackiethon</h1>
       <div className={styles.subtitle}>
         <span className={styles.highlight}>
-          Melbourne's Premier Rookie Hackathon
+          Australia's Premier Rookie Hackathon
         </span>
       </div>
       <div className={styles.subtitle}>

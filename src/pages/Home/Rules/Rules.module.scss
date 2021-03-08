@@ -16,12 +16,22 @@
   font-size: $font-size-1;
   border-collapse: collapse;
 
-  tr>:first-child {
+  tr > :first-child {
     color: $light-blue;
   }
 
   td {
     border-bottom: 1px solid $blue;
     padding: 0.8rem;
+  }
+
+  a {
+    color: $light-blue;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $primary-white;
+    }
   }
 }

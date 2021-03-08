@@ -6,7 +6,7 @@
 
 .channels {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   flex-direction: column;
   @include desktop {
     flex-direction: row;
@@ -19,6 +19,7 @@
   flex-direction: column;
   flex-grow: 1;
   flex-basis: 0;
+  max-width: 15rem;
 
   font-size: $font-size-1;
   border: 2px solid $primary-white;
