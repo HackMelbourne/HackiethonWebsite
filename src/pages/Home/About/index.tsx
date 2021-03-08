@@ -16,15 +16,15 @@ const About = () => {
       </h2>
       <div className={styles.content}>
         <p>
-          Are you new to University or have never done a hackathon before?
+          Are you a student who is new to the tech hackathon scene?
           Introducing the{" "}
           <strong>
             <Highlight>Hackiethon</Highlight>
           </strong>
           , a hackathon catered specially for rookies. We’ve removed some of the
-          primary barriers of joining hackathons to help you experience the
-          enjoyment and learning of a hackathon in a comfortable environment
-          where you’re surrounded by people in the same boat as you!
+          barriers of joining hackathons to help you experience the
+          enjoyment and learning of a hackathon in a beginner-friendly
+          environment!
         </p>
         <p>
           <Highlight>Hackiethon 2021</Highlight> will run{" "}

@@ -1,6 +1,5 @@
 import styles from "./Communication.module.scss";
 import { FaSlack, FaFacebook } from "react-icons/fa";
-import { HashLink as Link } from "react-router-hash-link";
 
 interface Props {
   children: React.ReactNode;

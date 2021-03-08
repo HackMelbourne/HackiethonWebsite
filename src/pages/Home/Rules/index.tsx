@@ -1,5 +1,4 @@
 import styles from "./Rules.module.scss";
-import { HashLink as Link } from "react-router-hash-link";
 
 const Rules = () => {
   return (
