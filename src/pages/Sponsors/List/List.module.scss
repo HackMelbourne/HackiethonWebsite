@@ -3,10 +3,6 @@
 .container {
   @include section;
 
-  padding-top: 6rem;
-  @include desktop {
-    padding: 6rem 12rem;
-  }
   text-align: center;
 
   h2,

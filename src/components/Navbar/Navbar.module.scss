@@ -93,4 +93,9 @@
 
 .mobileNav {
   display: flex;
+
+  // remove mobile nav on dekstop
+  @include desktop {
+    display: none;
+  }
 }

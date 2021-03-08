@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <nav className={styles.links}>
         <a
-          href="https://www.google.com"
+          href="mailto:hackmelb.team@gmail.com"
           title="Send us an email!"
           target="_blank"
           rel="noopener noreferrer"
@@ -14,7 +14,7 @@ const Footer = () => {
           <FaRegEnvelope />
         </a>
         <a
-          href="https://www.google.com"
+          href="https://www.facebook.com/hackmelbourne"
           title="Keep up with our Facebook!"
           target="_blank"
           rel="noopener noreferrer"
@@ -22,7 +22,7 @@ const Footer = () => {
           <FaFacebookSquare />
         </a>
         <a
-          href="https://www.google.com"
+          href="https://www.linkedin.com/company/67711292/"
           title="Check us out on LinkedIn!"
           target="_blank"
           rel="noopener noreferrer"

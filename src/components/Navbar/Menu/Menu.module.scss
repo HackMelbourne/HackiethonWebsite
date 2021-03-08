@@ -1,10 +1,6 @@
 @import "../../../styles/styles.scss";
 
 .menu {
-  @include desktop {
-    display: none;
-  }
-
   height: 100vh;
   padding: 3rem;
 
@@ -23,7 +19,7 @@
 
   transition: transform 0.1s ease-in-out;
 
-  // menu is slid in if not open
+  // menu is slid in to the right if not open
   transform: translateX(100%);
 
   a {
@@ -43,7 +39,7 @@
   }
 }
 
-// if open, slide out
+// if open, slide out from the right: undo the original translateX
 .open {
   transform: translateX(0);
 }

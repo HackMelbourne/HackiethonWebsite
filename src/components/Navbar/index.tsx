@@ -18,7 +18,7 @@ const Logo = () => {
   );
 };
 
-// a typed object in JS: string attributes to string values, like a Map
+// a typed JS object: string attributes to string values, like a Map
 type StringMap = { [label: string]: string };
 
 interface Props {
@@ -78,17 +78,19 @@ const Navbar = () => {
   // this is for the menu on mobile
   const [open, setOpen] = useState(false);
 
+  // when the user clicks/taps outside the open Menu, it closes.
   const ref = useRef<HTMLDivElement>(null);
   useOnClickOutside(ref, () => setOpen(false));
 
+  // map dropdown labels to href's
   const subLinksMap = {
     participants: {
-      "ABOUT": "/#about",
-      "SCHEDULE": "/#schedule",
+      ABOUT: "/#about",
+      SCHEDULE: "/#schedule",
       "RULES & FAQ": "/#rules",
-      "COMMUNICATION": "/#communication",
-      "RESOURCES": "/#resources",
-      "PRIZES": "/#prizes",
+      COMMUNICATION: "/#communication",
+      RESOURCES: "/#resources",
+      PRIZES: "/#prizes",
     },
     sponsors: {
       "SPONSORS LIST": "/sponsors/#list",
@@ -119,9 +121,14 @@ const Navbar = () => {
         <Link to="/submission/#" className={styles.link}>
           SUBMISSION
         </Link>
-        <Link to="/signUp#" className={styles.button}>
+        <a
+          href="https://forms.gle/JuhBU1fiFLwe8HzH8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.button}
+        >
           SIGN UP
-        </Link>
+        </a>
       </div>
       <div className={styles.mobileNav} ref={ref}>
         <Burger open={open} setOpen={setOpen} />

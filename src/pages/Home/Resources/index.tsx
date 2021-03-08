@@ -33,7 +33,7 @@ const Resources = () => {
   return (
     <section id="resources" className={styles.resources}>
       <h2>Resources</h2>
-      <div className={styles.packs}>
+      {/* <div className={styles.packs}>
         <Pack
           title="Participants"
           description="Participants Resources Pack"
@@ -52,6 +52,11 @@ const Resources = () => {
           to={"/judges-pack#"}
           img={<img src={astronaut3} alt="orange astronaut face" />}
         />
+      </div> */}
+      <div className={styles.comingSoonContainer}>
+        <div className={styles.comingSoon}>
+          <h2>Coming soon!</h2>
+        </div>
       </div>
     </section>
   );

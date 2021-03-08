@@ -23,70 +23,42 @@ const Schedule = () => {
                   Mentor Introduction &amp; Mandatory First Mentor Check-in
                 </td>
               </tr>
-              <tr>
-                <th scope="row" rowSpan={6}>
+              <tr className={styles.bottomBorder}>
+                <th scope="row" rowSpan={1}>
                   SATURDAY
                 </th>
-                <td>10 AM</td>
-                <td>GitHub Workshop</td>
-              </tr>
-              <tr>
-                <td>11 AM</td>
-                <td>HTML &amp; CSS Workshop</td>
-              </tr>
-              <tr>
-                <td>12:30 PM</td>
-                <td>Lunch Break</td>
-              </tr>
-              <tr>
-                <td>1:30 PM</td>
-                <td>React.js Workshop</td>
-              </tr>
-              <tr>
-                <td>2 PM</td>
-                <td>APIs Workshop</td>
-              </tr>
-              <tr className={styles.bottomBorder}>
-                <td>4:30 PM</td>
-                <td>Second Mentor Check-in</td>
+                <td>4.30 AM - 6 PM</td>
+                <td>Social Night</td>
               </tr>
               <tr className={styles.bottomBorder}>
                 <th scope="row" rowSpan={1}>
                   SUNDAY
                 </th>
-                <td>4:30 PM</td>
-                <td>Third Mentor Check-in</td>
+                <td>4:30 PM - 6 PM</td>
+                <td>Second Mentor Check-in</td>
               </tr>
               <tr>
-                <th scope="row" rowSpan={5}>
+                <th scope="row" rowSpan={3}>
                   MONDAY
                 </th>
                 <td>8 AM</td>
                 <td>Submissions Due</td>
               </tr>
               <tr>
-                <td>9 AM</td>
-                <td>Judge Onboarding</td>
-              </tr>
-              <tr>
-                <td>9:30 AM</td>
-                <td>Judge Deliberation</td>
-              </tr>
-              <tr>
-                <td>4 PM</td>
-                <td>Results Confirmation</td>
+                <td>9:30 AM - 4 PM</td>
+                <td>Judging</td>
               </tr>
               <tr className={styles.bottomBorder}>
-                <td>4 PM</td>
+                <td>8 PM</td>
                 <td>Closing Ceremony</td>
               </tr>
             </tbody>
           </table>
-          <div className={styles.buttons}>
+          {/* <div className={styles.buttons}>
             <button className={styles.button}>PARTICIPANTS</button>
             <button className={styles.button}>MENTORS</button>
             <button className={styles.button}>JUDGES</button>
-          </div>
+          </div> */}
         </div>
         <div className={styles.satellite}>
           <img src={satellite} alt="satellite" />

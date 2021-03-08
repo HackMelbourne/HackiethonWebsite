@@ -4,30 +4,34 @@
     }
 }
 
-@mixin tablet-portrait {
+// tablet portrait
+@mixin tablet {
     @media (min-width: 600px) {
         @content;
     }
 }
 
-@mixin tablet-landscape {
+// tablet landscape
+@mixin small-desktop {
     @media (min-width: 900px) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media (min-width: 1200px) {
+    @media (min-width: 1200px) and (min-height: 700px) {
         @content;
     }
 }
 
-@mixin large_desktop {
+@mixin large-desktop {
     @media (min-width: 1800px) {
         @content;
     }
 }
 
+// TODO: devices are not either phone or desktop, should account for smaller
+// desktops.
 @mixin remove-on-phone {
     display: none;
     @include desktop {

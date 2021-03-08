@@ -7,7 +7,6 @@ import Submission from "./pages/Submission";
 import Updates from "./pages/Updates";
 import Sponsors from "./pages/Sponsors";
 import PageNotFound from "./pages/PageNotFound";
-import SignUp from "./pages/SignUp";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -38,11 +37,8 @@ const App = () => {
             <Route path="/submission">
               <Submission />
             </Route>
-            <Route path="/signUp">
-              <SignUp />
-            </Route>
             <Route>
-              {/* matches any other route: page for 404 error: */}
+              {/* matches any other route: page for 404 error */}
               <PageNotFound />
             </Route>
           </Switch>
