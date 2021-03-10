@@ -15,7 +15,12 @@
 }
 
 .logo {
-  @include remove-on-phone;
+  display: none;
+  @include desktop {
+    @include tall-screen {
+      display: unset;
+    }
+  }
   position: absolute;
   right: 100px;
   top: 120px;

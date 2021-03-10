@@ -5,6 +5,7 @@
 }
 
 .rocket {
+  @include remove-on-short-screen;
   position: absolute;
   right: 300px;
   bottom: 310px;
@@ -17,6 +18,7 @@
 }
 
 .planet2 {
+  @include remove-on-short-screen;
   position: absolute;
 }
 
