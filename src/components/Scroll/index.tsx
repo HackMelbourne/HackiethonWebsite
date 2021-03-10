@@ -63,7 +63,7 @@ const Scroll = ({ pageHeight }: Props) => {
         <Link to="/#schedule">SCHEDULE</Link>
         <Link to="/#rules">RULES &amp; FAQ</Link>
         <Link to="/#communication">COMMUNICATION</Link>
-        <Link to="/#resources">RESOURCES</Link>
+        {/* <Link to="/#resources">RESOURCES</Link> */}
         <Link to="/#prizes">PRIZES</Link>
       </div>
     </nav>

@@ -27,7 +27,7 @@ const Home = ({ pageHeight }: Props) => {
       <Schedule />
       <Rules />
       <Communication />
-      <Resources />
+      {/* <Resources /> */}
       <Prizes />
     </>
   );

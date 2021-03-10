@@ -89,12 +89,12 @@ const Navbar = () => {
       SCHEDULE: "/#schedule",
       "RULES & FAQ": "/#rules",
       COMMUNICATION: "/#communication",
-      RESOURCES: "/#resources",
+      // RESOURCES: "/#resources",
       PRIZES: "/#prizes",
     },
     sponsors: {
       "SPONSORS LIST": "/sponsors/#list",
-      "VIDEO FEATURES": "/sponsors/#videos",
+      // "VIDEO FEATURES": "/sponsors/#videos",
     },
   };
 
@@ -105,9 +105,14 @@ const Navbar = () => {
         <Logo />
       </Link>
       <div className={styles.links}>
-        <Link to="/updates/#" className={styles.link}>
+        <a
+          href="https://www.facebook.com/events/426944495051069/?active_tab=discussion"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
           UPDATES
-        </Link>
+        </a>
         <DropdownLink subLinks={subLinksMap.participants}>
           <Link to="/#" className={styles.link}>
             PARTICIPANTS

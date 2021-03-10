@@ -10,22 +10,22 @@ const Sponsors = () => {
     <>
       <StarryBackground/>
       <List />
-      <Videos />
+      {/* <Videos /> */}
     </>
   );
 };
 
-const SponsorsTemp = () => {
-  return (
-    <>
-      <StarryBackground />
-      <div className={styles.container}>
-        <Message>
-          Coming soon!
-        </Message>
-      </div>
-    </>
-  );
-};
+// const SponsorsTemp = () => {
+//   return (
+//     <>
+//       <StarryBackground />
+//       <div className={styles.container}>
+//         <Message>
+//           Coming soon!
+//         </Message>
+//       </div>
+//     </>
+//   );
+// };
 
-export default SponsorsTemp;
+export default Sponsors;

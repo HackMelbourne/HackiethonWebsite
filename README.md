@@ -1,7 +1,7 @@
 # Hackiethon 2021 Website
 
 This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app).
+cawx[Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -25,7 +25,7 @@ Your app is ready to be deployed!
 
 ## Deployment
 
-The website is hosted at on HackMelbourne Team's Firebase account.
+The website is hosted on HackMelbourne Team's Firebase account.
 
 with Firebase CLI installed,
 

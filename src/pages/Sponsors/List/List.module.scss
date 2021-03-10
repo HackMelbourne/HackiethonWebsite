@@ -13,6 +13,7 @@
 
 .title {
   font-size: $font-size-5;
+  padding-bottom: 4rem;
   color: $accent-yellow;
 }
 
@@ -39,6 +40,8 @@
     max-height: 120px;
     height: auto;
   }
+
+  font-weight: bold;
 
   .name {
     font-size: $font-size-2;

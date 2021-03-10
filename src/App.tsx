@@ -4,7 +4,6 @@ import Background from "./components/Background";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Submission from "./pages/Submission";
-import Updates from "./pages/Updates";
 import Sponsors from "./pages/Sponsors";
 import PageNotFound from "./pages/PageNotFound";
 import Footer from "./components/Footer";
@@ -27,9 +26,6 @@ const App = () => {
           <Switch>
             <Route exact path="/">
               <Home pageHeight={pageHeight} />
-            </Route>
-            <Route path="/updates">
-              <Updates />
             </Route>
             <Route path="/sponsors">
               <Sponsors />
