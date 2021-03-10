@@ -13,7 +13,13 @@ const Menu = ({ open }: Props) => {
       <Link to="/#">PARTICIPANTS</Link>
       <Link to="/sponsors#">SPONSORS</Link>
       <Link to="/submission#">SUBMISSION</Link>
-      <Link to="/signUp#">SIGN UP</Link>
+      <a
+          href="https://forms.gle/JuhBU1fiFLwe8HzH8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SIGN UP
+        </a>
     </nav>
   );
 };
