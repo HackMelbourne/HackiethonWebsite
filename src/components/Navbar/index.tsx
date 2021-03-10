@@ -94,7 +94,7 @@ const Navbar = () => {
     },
     sponsors: {
       "SPONSORS LIST": "/sponsors/#list",
-      "VIDEO FEATURES": "/sponsors/#videos",
+      // "VIDEO FEATURES": "/sponsors/#videos",
     },
   };
 

@@ -1,5 +1,5 @@
 import styles from "./List.module.scss";
-import logo from "../../../assets/hm-logo-dark.svg";
+import optiverLogo from "../../../assets/sponsors/optiver/optiver_logo.png";
 
 interface CompanyProps {
   src: string;
@@ -39,21 +39,17 @@ const List = () => {
         Hackiethon <span className={styles.highlight}> 2021 Sponsors</span>
       </h2>
       <Tier title="Diamond Sponsors">
-        <Company src={logo} name="Company name" href="https://www.google.com" />
+        <div className={styles.company}>
+          <p>Be the first Diamond tier sponsor!</p>
+        </div>
       </Tier>
       <Tier title="Platinum Sponsors">
-        <Company src={logo} name="Company name" href="https://www.google.com" />
-        <Company src={logo} name="Company name" href="https://www.google.com" />
-        <Company src={logo} name="Company name" href="https://www.google.com" />
+        <div className={styles.company}>
+          <p>Be the first Platinum tier sponsor!</p>
+        </div>
       </Tier>
       <Tier title="Gold Sponsors">
-        <Company src={logo} name="Company name" href="https://www.google.com" />
-        <Company src={logo} name="Company name" href="https://www.google.com" />
-        <Company src={logo} name="Company name" href="https://www.google.com" />
-        <Company src={logo} name="Company name" href="https://www.google.com" />
-        <Company src={logo} name="Company name" href="https://www.google.com" />
-        <Company src={logo} name="Company name" href="https://www.google.com" />
-        <Company src={logo} name="Company name" href="https://www.google.com" />
+        <Company src={optiverLogo} name="Optiver" href="https://www.optiver.com" />
       </Tier>
       <div className={styles.interestedMessage}>
         Interested? Visit the{" "}
