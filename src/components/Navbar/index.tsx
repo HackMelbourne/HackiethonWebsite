@@ -105,9 +105,14 @@ const Navbar = () => {
         <Logo />
       </Link>
       <div className={styles.links}>
-        <Link to="/updates/#" className={styles.link}>
+        <a
+          href="https://www.facebook.com/events/426944495051069/?active_tab=discussion"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
           UPDATES
-        </Link>
+        </a>
         <DropdownLink subLinks={subLinksMap.participants}>
           <Link to="/#" className={styles.link}>
             PARTICIPANTS

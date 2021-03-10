@@ -9,17 +9,24 @@ interface Props {
 const Menu = ({ open }: Props) => {
   return (
     <nav className={open ? `${styles.menu} ${styles.open}` : styles.menu}>
-      <Link to="/updates">UPDATES</Link>
+      <a
+        href="https://www.facebook.com/events/426944495051069/?active_tab=discussion"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.link}
+      >
+        UPDATES
+      </a>
       <Link to="/#">PARTICIPANTS</Link>
       <Link to="/sponsors#">SPONSORS</Link>
       <Link to="/submission#">SUBMISSION</Link>
       <a
-          href="https://forms.gle/JuhBU1fiFLwe8HzH8"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          SIGN UP
-        </a>
+        href="https://forms.gle/JuhBU1fiFLwe8HzH8"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        SIGN UP
+      </a>
     </nav>
   );
 };
