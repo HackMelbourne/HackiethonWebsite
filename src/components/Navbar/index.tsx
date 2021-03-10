@@ -89,7 +89,7 @@ const Navbar = () => {
       SCHEDULE: "/#schedule",
       "RULES & FAQ": "/#rules",
       COMMUNICATION: "/#communication",
-      RESOURCES: "/#resources",
+      // RESOURCES: "/#resources",
       PRIZES: "/#prizes",
     },
     sponsors: {
