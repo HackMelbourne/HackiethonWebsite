@@ -1,7 +1,7 @@
 # Hackiethon 2021 Website
 
 This project was bootstrapped with
-cawx[Create React App](https://github.com/facebook/create-react-app).
+[Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

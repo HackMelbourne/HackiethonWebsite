@@ -24,8 +24,8 @@
     }
 }
 
-@mixin large-desktop {
-    @media (min-width: 1800px) {
+@mixin tall-screen {
+    @media (min-height: 700px) {
         @content;
     }
 }
@@ -35,6 +35,13 @@
 @mixin remove-on-phone {
     display: none;
     @include desktop {
+        display: unset;
+    }
+}
+
+@mixin remove-on-short-screen {
+    display: none;
+    @include tall-screen {
         display: unset;
     }
 }
