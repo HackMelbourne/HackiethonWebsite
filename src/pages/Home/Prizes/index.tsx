@@ -7,27 +7,27 @@ const Prizes = () => {
       <div className={styles.topPrizes}>
         <div className={styles.prize1}>
           <h3>First Place</h3>
-          <span>TBA</span>
+          <span>$500</span>
         </div>
         <div className={styles.prize2}>
           <h3>Second Place</h3>
-          <span>TBA</span>
+          <span>$300</span>
         </div>
         <div className={styles.prize3}>
           <h3>Third Place</h3>
-          <span>TBA</span>
+          <span>$100</span>
         </div>
       </div>
       <div className={styles.honourableMentions}>
         <div className={styles.prize4}>
           <h3>
-            Most Outstanding
-            <br />
-            Design
+            Most Outstanding Design
           </h3>
+          <span>$70 worth of sponsor swag</span>
         </div>
         <div className={styles.prize5}>
           <h3>"Sponsor" Favourite</h3>
+          <span>$70 worth of sponsor swag</span>
         </div>
       </div>
     </section>
