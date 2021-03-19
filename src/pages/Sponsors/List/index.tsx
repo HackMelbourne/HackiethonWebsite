@@ -1,5 +1,6 @@
 import styles from "./List.module.scss";
 import optiverLogo from "../../../assets/sponsors/optiver/optiver_logo.png";
+import tibraLogo from "../../../assets/sponsors/tibra/tibra_logo.png";
 
 interface CompanyProps {
   src: string;
@@ -39,9 +40,7 @@ const List = () => {
         Hackiethon <span className={styles.highlight}> 2021 Sponsors</span>
       </h2>
       <Tier title="Diamond Sponsors">
-        <div className={styles.company}>
-          <p>Be the first Diamond tier sponsor!</p>
-        </div>
+        <Company src={tibraLogo} name="Tibra" href="https://www.tibra.com" />
       </Tier>
       <Tier title="Platinum Sponsors">
         <div className={styles.company}>
