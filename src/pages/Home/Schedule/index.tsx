@@ -27,7 +27,7 @@ const Schedule = () => {
                 <th scope="row" rowSpan={1}>
                   SATURDAY
                 </th>
-                <td>4.30 AM - 6 PM</td>
+                <td>4.30 PM - 6 PM</td>
                 <td>Social Night</td>
               </tr>
               <tr className={styles.bottomBorder}>
