@@ -36,7 +36,7 @@ const Rules = () => {
             <td>Who is considered a 'Rookie'?</td>
             <td>
               Someone who has completed zero or one hackathon at the time of
-              sign up during their tertiary education.
+              sign up during their education.
             </td>
           </tr>
           <tr>

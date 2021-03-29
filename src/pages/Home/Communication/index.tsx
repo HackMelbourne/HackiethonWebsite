@@ -31,7 +31,7 @@ const Communication = () => {
           button={
             <a
               className={styles.button}
-              href="https://join.slack.com/t/hackiethon2021/shared_invite/zt-lc3f29fp-Xo9RDyiqWfL5vtnv4C3HzA"
+              href="https://join.slack.com/t/hackiethon2021/shared_invite/zt-o5qq6rsj-lwIl24_MbUsWm2Fcvr~C8A"
               target="_blank"
               rel="noopener noreferrer"
             >

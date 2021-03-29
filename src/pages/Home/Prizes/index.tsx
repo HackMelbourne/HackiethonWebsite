@@ -23,11 +23,11 @@ const Prizes = () => {
           <h3>
             Most Outstanding Design
           </h3>
-          <span>$70 worth of sponsor swag</span>
+          <span>$35</span>
         </div>
         <div className={styles.prize5}>
           <h3>"Sponsor" Favourite</h3>
-          <span>$70 worth of sponsor swag</span>
+          <span>$35</span>
         </div>
       </div>
     </section>
