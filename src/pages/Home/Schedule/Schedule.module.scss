@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.zoomLink {
+  color: $light-blue;
+}
+
 .timetable {
   font-size: $font-size-1;
   @include desktop {
@@ -21,11 +25,12 @@
 
   table {
     border-collapse: collapse;
+    width: 100%;
   }
 
   th,
   td {
-    padding: 0.5rem 2rem 0.5rem 0rem;
+    padding: 1rem 2rem 1rem 0rem;
   }
 
   // the first selects the first column, the last two selectors collectively
@@ -42,7 +47,7 @@
   }
 }
 
-.bottomBorder {
+tr {
   border-bottom: 1px solid $blue;
 }
 
@@ -53,6 +58,16 @@
 // buttons are uniform length here
 .button {
   @include button;
+  font-size: 0.8rem;
   padding: 0.5rem 1rem;
+  @include desktop {
+    padding: 0.5rem 1rem;
+  }
   margin: 0.5rem;
+}
+
+.selected {
+  filter: brightness(60%);
+  background-color: $accent-yellow;
+  color: $primary-dark;
 }
