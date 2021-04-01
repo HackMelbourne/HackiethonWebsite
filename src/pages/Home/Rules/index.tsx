@@ -5,7 +5,7 @@ const Rules = () => {
     <section id="rules" className={styles.rules}>
       <h2>Rules &amp; FAQ</h2>
       <div className={styles.content}>
-        <p>The rules are being finalised and will be available soon!</p>
+        {/* <p>The rules are being finalised and will be available soon!</p> */}
         <table className={styles.table}>
           <tr>
             <td>What is a hackathon?</td>

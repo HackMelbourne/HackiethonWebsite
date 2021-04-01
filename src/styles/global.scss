@@ -1,5 +1,13 @@
 @import "./styles.scss";
 
+// hide the dotted lines around an element when it receives focus
+::-moz-focus-inner {
+  border: 0;
+} // firefox
+:focus {
+  outline: none;
+} // ie8, chrome, etc
+
 // force the top div's to fill up screen
 html,
 body,

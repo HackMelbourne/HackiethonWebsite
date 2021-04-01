@@ -52,16 +52,16 @@ tr {
 }
 
 .buttons {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 // buttons are uniform length here
 .button {
   @include button;
   font-size: 0.8rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   @include desktop {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem;
   }
   margin: 0.5rem;
 }

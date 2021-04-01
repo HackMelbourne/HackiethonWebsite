@@ -88,6 +88,13 @@ $shadows-large: multiple-box-shadow(600);
 
 .star3 {
   @include star;
+
+  // hide this if < 1400px, so no horizontal overflow for smaller screens
+  display: none;
+  @media (min-width: 1400px) {
+    display: unset;
+  }
+
   position: absolute;
   width: 27px;
   height: 27px;

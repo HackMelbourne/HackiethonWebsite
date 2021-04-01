@@ -134,14 +134,14 @@ const MondaySchedule = (
       <td>8:00PM - 9:00PM</td>
       <td>Closing Ceremony</td>
       <td>
-        <ZoomLink href="https://unimelb.zoom.us/j/89851646049?pwd=aVhtWk94d3Bac0R2M1hVbkZFMGZBZz09" />
+        <ZoomLink href="https://unimelb.zoom.us/j/82276023280?pwd=RjBsS0swbEE1TGxXT1d2K3g4ak9pZz09" />
       </td>
     </tr>
   </>
 );
 
 const Schedule = () => {
-  const [selected, setSelected] = useState("Friday");
+  const [selected, setSelected] = useState("Workshops");
   const schedules: { [selection: string]: JSX.Element } = {
     Workshops: WorkshopsSchedule,
     Friday: FridaySchedule,
