@@ -1,6 +1,7 @@
 import styles from "./List.module.scss";
-import optiverLogo from "../../../assets/sponsors/optiver/optiver_logo.png";
-import tibraLogo from "../../../assets/sponsors/tibra/tibra_logo.png";
+import optiverLogo from "../../../assets/sponsors/optiver/optiver.png";
+import tibraLogo from "../../../assets/sponsors/tibra/tibra.png";
+import arcitectaLogo from "../../../assets/sponsors/arcitecta/arcitecta.png";
 
 interface CompanyProps {
   src: string;
@@ -12,7 +13,9 @@ const Company = ({ src, name, href }: CompanyProps) => {
   return (
     <div className={styles.company}>
       <a href={href} target="_blank" rel="noopener noreferrer">
-        <img src={src} alt={name} />
+        <div className={styles.imgContainer}>
+          <img src={src} alt={name} />
+        </div>
       </a>
       <div className={styles.name}>{name}</div>
     </div>
@@ -29,6 +32,7 @@ const Tier = ({ title, children }: TierProps) => {
     <section className={styles.tier}>
       <h3 className={styles.tierTitle}>{title}</h3>
       <div className={styles.companies}>{children}</div>
+      <div className={styles.tierSeparator} />
     </section>
   );
 };
@@ -41,6 +45,11 @@ const List = () => {
       </h2>
       <Tier title="Diamond Sponsors">
         <Company src={tibraLogo} name="Tibra" href="https://www.tibra.com" />
+        <Company
+          src={arcitectaLogo}
+          name="Arcitecta"
+          href="https://www.arcitecta.com/"
+        />
       </Tier>
       <Tier title="Platinum Sponsors">
         <div className={styles.company}>
@@ -48,7 +57,11 @@ const List = () => {
         </div>
       </Tier>
       <Tier title="Gold Sponsors">
-        <Company src={optiverLogo} name="Optiver" href="https://www.optiver.com" />
+        <Company
+          src={optiverLogo}
+          name="Optiver"
+          href="https://www.optiver.com"
+        />
       </Tier>
       <div className={styles.interestedMessage}>
         Interested? Visit the{" "}
