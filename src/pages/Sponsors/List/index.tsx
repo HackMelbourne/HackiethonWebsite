@@ -2,6 +2,7 @@ import styles from "./List.module.scss";
 import optiverLogo from "../../../assets/sponsors/optiver/optiver.png";
 import tibraLogo from "../../../assets/sponsors/tibra/tibra.png";
 import arcitectaLogo from "../../../assets/sponsors/arcitecta/arcitecta.png";
+import reaLogo from "../../../assets/sponsors/rea/rea.png";
 
 interface CompanyProps {
   src: string;
@@ -51,11 +52,13 @@ const List = () => {
           href="https://www.arcitecta.com/"
         />
       </Tier>
-      {/* <Tier title="Platinum Sponsors">
-        <div className={styles.company}>
-          <p>Be the first Platinum tier sponsor!</p>
-        </div>
-      </Tier> */}
+      <Tier title="Platinum Sponsors">
+        <Company
+          src={reaLogo}
+          name="REA Group"
+          href="https://www.rea-group.com/"
+        />
+      </Tier>
       <Tier title="Gold Sponsors">
         <Company
           src={optiverLogo}

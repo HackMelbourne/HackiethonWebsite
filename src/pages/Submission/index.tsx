@@ -1,10 +1,5 @@
 import { StarryBackground } from "../../components/SpaceScene";
 import styles from "./Submission.module.scss";
-
-import Message from "../../components/Message";
-
-// https://www.notion.so/How-to-Submit-5e06dc11c52b4034a0d8f249540a77ba
-
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 interface Props {
@@ -16,7 +11,6 @@ const ExternalLink = ({ href, children }: Props) => (
   <a
     className={styles.externalLink}
     href={href}
-    title="Zoom Link"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -198,19 +192,6 @@ const Schedule = () => {
         </table>
       </div>
     </div>
-  );
-};
-
-const SubmissionTemp = () => {
-  return (
-    <>
-      <StarryBackground />
-      <div className={styles.tempContainer}>
-        <Message>
-          Nothing to see here <br /> until hackathon starts!
-        </Message>
-      </div>
-    </>
   );
 };
 
