@@ -2,6 +2,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import styles from "./Navbar.module.scss";
 
 import rocket from "../../assets/rocket-yellow.svg";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
 import Burger from "./Burger";
 import Menu from "./Menu";
@@ -94,7 +95,7 @@ const Navbar = () => {
     },
     sponsors: {
       "SPONSORS LIST": "/sponsors/#list",
-      // "VIDEO FEATURES": "/sponsors/#videos",
+      "VIDEO FEATURES": "/sponsors/#videos",
     },
   };
 
@@ -111,7 +112,8 @@ const Navbar = () => {
           rel="noopener noreferrer"
           className={styles.link}
         >
-          UPDATES
+          UPDATES{" "}
+          <FaExternalLinkAlt />
         </a>
         <DropdownLink subLinks={subLinksMap.participants}>
           <Link to="/#" className={styles.link}>

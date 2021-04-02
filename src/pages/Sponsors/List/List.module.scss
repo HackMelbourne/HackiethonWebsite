@@ -11,6 +11,13 @@
   }
 }
 
+.tierSeparator {
+  margin: 2vh 20% 0;
+  border-radius: 10px;
+  height: 2px;
+  background-color: $blue;
+}
+
 .title {
   font-size: $font-size-5;
   padding-bottom: 4rem;
@@ -28,17 +35,25 @@
 }
 
 .company {
-
   padding: 1rem;
   @include desktop {
     padding: 2rem;
   }
 
-  img {
-    width: 120px;
-    max-width: 100%;
-    max-height: 120px;
-    height: auto;
+  .imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+      width: 200px;
+      height: 100px;
+
+    img {
+      width: 200px;
+      max-width: 100%;
+      max-height: 200px;
+      height: auto;
+    }
   }
 
   font-weight: bold;
@@ -50,13 +65,13 @@
 }
 
 .tier {
-  border-bottom: 1px solid $blue;
   padding: 2rem;
 
   .tierTitle {
     color: $light-blue;
     font-weight: lighter;
     font-size: $font-size-4;
+    padding-bottom: 2rem;
   }
 }
 
@@ -67,7 +82,8 @@
     color: $light-blue;
     text-decoration: underline;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $primary-white;
     }
   }

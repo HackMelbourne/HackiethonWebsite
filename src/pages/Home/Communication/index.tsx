@@ -1,5 +1,5 @@
 import styles from "./Communication.module.scss";
-import { FaSlack, FaFacebook } from "react-icons/fa";
+import { FaSlack, FaFacebook, FaExternalLinkAlt } from "react-icons/fa";
 
 interface Props {
   children: React.ReactNode;
@@ -35,7 +35,8 @@ const Communication = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              JOIN
+              JOIN {" "}
+              <FaExternalLinkAlt />
             </a>
           }
         >
@@ -51,7 +52,8 @@ const Communication = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              FOLLOW
+              FOLLOW {" "}
+              <FaExternalLinkAlt />
             </a>
           }
         >
