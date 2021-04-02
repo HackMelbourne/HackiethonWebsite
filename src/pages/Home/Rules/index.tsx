@@ -1,11 +1,23 @@
 import styles from "./Rules.module.scss";
+import {FaExternalLinkAlt} from "react-icons/fa";
 
 const Rules = () => {
   return (
     <section id="rules" className={styles.rules}>
       <h2>Rules &amp; FAQ</h2>
       <div className={styles.content}>
-        {/* <p>The rules are being finalised and will be available soon!</p> */}
+        <p>
+          The rules are available on{" "}
+          <a
+            className={styles.externalLink}
+            href="https://www.notion.so/Rules-77224571e2b3412dbf5794dcba688fb7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            the Hacker's Guide {" "}
+            <FaExternalLinkAlt />
+          </a>.
+        </p>
         <table className={styles.table}>
           <tr>
             <td>What is a hackathon?</td>
@@ -18,12 +30,8 @@ const Rules = () => {
             </td>
           </tr>
           <tr>
-            <td>
-              Is there a theme for Hackiethon?
-            </td>
-            <td>
-              Yes! It will be revealed at the start of the event.
-            </td>
+            <td>Is there a theme for Hackiethon?</td>
+            <td>Yes! It will be revealed at the start of the event.</td>
           </tr>
           <tr>
             <td>Who can participate?</td>
@@ -44,12 +52,11 @@ const Rules = () => {
               I've completed more than one hackathon, can I still take part?
             </td>
             <td>
-              Yes, however, you will not be eligible for prizes. We do this
-              to provide a more accessible and less intimidating experience
-              for our participants. If you have experience with Hackathons,
-              you can become a mentor and help guide teams towards a
-              successful project! More information about mentorship and how
-              to sign up coming soon.
+              Yes, however, you will not be eligible for prizes. We do this to
+              provide a more accessible and less intimidating experience for our
+              participants. If you have experience with Hackathons, you can
+              become a mentor and help guide teams towards a successful project!
+              More information about mentorship and how to sign up coming soon.
             </td>
           </tr>
           <tr>

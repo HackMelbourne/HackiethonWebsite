@@ -1,6 +1,5 @@
 import styles from "./Videos.module.scss";
 
-import ReactPlayer from "react-player/youtube";
 import optiverVideo from "../../../assets/videos/optiver_video.mp4";
 
 interface Props {
