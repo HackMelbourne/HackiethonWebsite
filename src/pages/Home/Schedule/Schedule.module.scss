@@ -45,11 +45,11 @@
     vertical-align: top;
     text-align: left;
   }
+  tr {
+    border-bottom: 1px solid $blue;
+  }
 }
 
-tr {
-  border-bottom: 1px solid $blue;
-}
 
 .buttons {
   padding: 0.5rem;

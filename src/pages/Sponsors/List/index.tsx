@@ -51,11 +51,11 @@ const List = () => {
           href="https://www.arcitecta.com/"
         />
       </Tier>
-      <Tier title="Platinum Sponsors">
+      {/* <Tier title="Platinum Sponsors">
         <div className={styles.company}>
           <p>Be the first Platinum tier sponsor!</p>
         </div>
-      </Tier>
+      </Tier> */}
       <Tier title="Gold Sponsors">
         <Company
           src={optiverLogo}

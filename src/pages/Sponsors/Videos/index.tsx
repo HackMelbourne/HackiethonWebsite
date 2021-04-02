@@ -26,6 +26,13 @@ const Videos = () => {
           <div>
             <h3>Optiver</h3>
             <p>
+              At Optiver, we improve the market. We're a self-funded
+              market-making firm, dedicated to having a positive impact on
+              the world's markets. We harness the power of extraordinary
+              talent and give our people interesting problems to solve in a
+              collaborative, high-performing environment.
+            </p>
+            <p>
               We're looking for bright, ambitious solution-seekers. We want the
               people who love thinking through (and talking over) a big, chewy
               problem. Our business was built on finding talent, and giving them

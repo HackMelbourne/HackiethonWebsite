@@ -92,13 +92,13 @@ const SundaySchedule = (
       <td>
       </td>
     </tr>
-    <tr>
+    {/* <tr>
       <td>1:00PM - 2:00PM</td>
       <td>Networking event</td>
       <td>
         <ZoomLink href="https://unimelb.zoom.us/j/84932847307?pwd=bi9kRWF2T2NYMjcrUVFnK2d4R1BEUT09" />
       </td>
-    </tr>
+    </tr> */}
     <tr>
       <td>2:00PM - 4:00PM</td>
       <td>Mentor assistance window #3</td>
