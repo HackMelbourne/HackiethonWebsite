@@ -5,7 +5,6 @@ import styles from "./Home.module.scss";
 import Title from "./Title";
 import Prizes from "./Prizes";
 import Communication from "./Communication";
-import Resources from "./Resources";
 import Schedule from "./Schedule";
 import About from "./About";
 import Rules from "./Rules";
