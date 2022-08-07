@@ -6,11 +6,11 @@
 
 .hero {
   padding-top: 5rem;
+  text-align: center;
+  min-height: 70vh;
+  margin-top: 25vh;
   @include desktop {
     padding-top: 0;
-    position: absolute;
-    left: 10rem;
-    bottom: 6rem;
   }
 }
 

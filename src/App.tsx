@@ -1,11 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Background from "./components/Background";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Submission from "./pages/Submission";
-import Sponsors from "./pages/Sponsors";
-import PageNotFound from "./pages/PageNotFound";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -19,29 +15,13 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <div ref={ref}>
-        <Background>
-          <Navbar />
-          <Switch>
-            <Route exact path="/">
-              <Home pageHeight={pageHeight} />
-            </Route>
-            <Route path="/sponsors">
-              <Sponsors />
-            </Route>
-            <Route path="/submission">
-              <Submission />
-            </Route>
-            <Route>
-              {/* matches any other route: page for 404 error */}
-              <PageNotFound />
-            </Route>
-          </Switch>
-        </Background>
-        <Footer />
-      </div>
-    </Router>
+    <div ref={ref}>
+      <Background>
+        {/* <Navbar /> */}
+          <Home pageHeight={pageHeight} />
+      </Background>
+      <Footer />
+    </div>
   );
 };
 
