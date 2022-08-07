@@ -16,3 +16,11 @@
 .highlight {
   font-weight: bold;
 }
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
