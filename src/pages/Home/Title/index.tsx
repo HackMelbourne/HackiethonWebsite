@@ -1,5 +1,4 @@
 import Hero from "../../../components/Hero";
-import logo from "../../../assets/hm-logo-dark.svg";
 import styles from "./Title.module.scss";
 
 const Title = () => {
