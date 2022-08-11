@@ -4,7 +4,15 @@ const Hero = () => {
   return (
     <div>
       <span className={styles.date}>26 - 29 September 2022</span>
-      <h1 className={styles.title}>Hackiethon</h1>
+      
+      <div className={styles.title_container}>
+        <img alt='rocket' className = {styles.rocket} src = "rocket.svg"/>
+        <h1 className={styles.title}>
+          <span className={styles.title_accent}>Hackie</span>
+          <span>thon</span>
+        </h1>
+      </div>
+      
       <div className={styles.subtitle}>
         <span className={styles.highlight}>
           Australia's Premier Rookie Hackathon
@@ -15,7 +23,7 @@ const Hero = () => {
       </div>
       <div className={styles.buttons}>
         {/* Should change to <a> for easier navigation */}
-        <button>Register now!</button>
+        <button className={styles.button_accent}>Register now!</button>
         <button>Learn more</button>
       </div>
     </div>

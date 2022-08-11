@@ -17,7 +17,7 @@ body,
 }
 
 html {
-  scrollbar-color: grey $primary-darker;
+  scrollbar-color: grey $primary-dark;
   scroll-behavior: smooth;
 }
 
@@ -25,16 +25,18 @@ html {
 h1 {
   font-size: $font-size-7;
 }
+
 h2 {
   font-size: $font-size-5;
 }
+
 h3 {
   font-size: $font-size-3;
 }
 
 body {
   margin: 0;
-  font-family: $font-sans;
+  font-family: $font-secondary;
   font-size: $font-size-1;
   color: $primary-white;
   -webkit-font-smoothing: antialiased;
