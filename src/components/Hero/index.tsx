@@ -1,17 +1,18 @@
 import styles from "./Hero.module.scss";
+import {ReactComponent as LogoText} from '../../assets/logo/3DText.svg';
+import rocket from '../../assets/logo/rocket.png';
+
 
 const Hero = () => {
-  return (
-    <div>
-      <span className={styles.date}>26 - 29 September 2022</span>
-      
-      <div className={styles.title_container}>
-        <img alt='rocket' className = {styles.rocket} src = "rocket.svg"/>
-        <h1 className={styles.title}>
-          <span className={styles.title_accent}>Hackie</span>
-          <span>thon</span>
-        </h1>
-      </div>
+    return (
+        <div>
+            <div className={styles.bg}/>
+            <span className={styles.date}>26 - 29 September 2022</span>
+
+            <div className={styles.title_container}>
+                <img src={rocket} className={styles.rocket}/>
+                <LogoText className={styles.title}/>
+            </div>
       
       <div className={styles.subtitle}>
         <span className={styles.highlight}>
