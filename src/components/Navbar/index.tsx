@@ -1,23 +1,12 @@
 import { HashLink as Link } from "react-router-hash-link";
 import styles from "./Navbar.module.scss";
 
-import rocket from "../../assets/rocket-yellow.svg";
+import rocket from "../../assets/rocket_2022.svg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
 import Burger from "./Burger";
 import Menu from "./Menu";
-
-const Logo = () => {
-  return (
-    <div className={styles.logo}>
-      <img src={rocket} height="60px" alt="rocket" />
-      <div>
-        <div className={styles.text}>Hackiethon</div>
-        <div className={styles.subtext}>by HackMelbourne</div>
-      </div>
-    </div>
-  );
-};
+import Logo from "./Logo"
 
 // a typed JS object: string attributes to string values, like a Map
 type StringMap = { [label: string]: string };
@@ -106,7 +95,7 @@ const Navbar = () => {
         <Logo />
       </Link>
       <div className={styles.links}>
-        <a
+        {/* <a
           href="https://www.facebook.com/events/426944495051069/?active_tab=discussion"
           target="_blank"
           rel="noopener noreferrer"
@@ -114,8 +103,24 @@ const Navbar = () => {
         >
           UPDATES{" "}
           <FaExternalLinkAlt />
-        </a>
-        <DropdownLink subLinks={subLinksMap.participants}>
+        </a> */}
+        <Link to="/#schedule" className={styles.link}>
+          Schedule
+        </Link>
+        <Link to="/#prizes" className={styles.link}>
+          Prizes
+        </Link>
+        <Link to="/#about" className={styles.link}>
+          About
+        </Link>
+        <Link to="/#faqs" className={styles.link}>
+          FAQs
+        </Link>
+        <Link to="/#submission" className={styles.link}>
+          Submission
+        </Link>
+
+        {/* <DropdownLink subLinks={subLinksMap.participants}>
           <Link to="/#" className={styles.link}>
             PARTICIPANTS
           </Link>
@@ -127,7 +132,7 @@ const Navbar = () => {
         </DropdownLink>
         <Link to="/submission/#" className={styles.link}>
           SUBMISSION
-        </Link>
+        </Link> */}
         <a
           href="https://forms.gle/JuhBU1fiFLwe8HzH8"
           target="_blank"
