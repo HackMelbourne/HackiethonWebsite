@@ -3,6 +3,7 @@ import Background from "./components/Background";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 const App = () => {
   // getting the total page height is effectful, this is needed for Scroll
@@ -15,13 +16,15 @@ const App = () => {
   }, []);
 
   return (
-    <div ref={ref}>
-      <Background>
-        {/* <Navbar /> */}
+    <Router>
+      <div ref={ref}>
+        <Background>
+          <Navbar />
           <Home pageHeight={pageHeight} />
-      </Background>
-      <Footer />
-    </div>
+        </Background>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
