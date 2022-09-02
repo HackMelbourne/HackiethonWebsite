@@ -7,9 +7,14 @@
 .hero {
   text-align: center;
   min-height: 70vh;
-  margin-top: 25vh;
+
+  @include phone {
+    margin-top: 10vh;
+  }
   @include desktop {
     padding-top: 0;
+    margin-top: 25vh;
+
   }
 }
 

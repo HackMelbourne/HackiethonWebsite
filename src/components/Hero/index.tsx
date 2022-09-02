@@ -1,22 +1,22 @@
 import styles from "./Hero.module.scss";
 import {ReactComponent as LogoText} from '../../assets/logo/3DText.svg';
 import {ReactComponent as Rocket} from '../../assets/logo/rocket.svg';
-
+import classnames from "classnames";
 
 const Hero = () => {
   return (
       <>
-        <div className={styles.bg}/>
-        <div className={styles.bg_2}/>
-        <div style={{zIndex: '1 !important', position: 'relative'}}>
-          <span className={styles.date}>26 - 29 September 2022</span>
+          <div className={classnames(styles.bg, styles.large)}/>
+          <div className={classnames(styles.bg, styles.small)}/>
+          <div style={{position: "relative", zIndex: 1}}>
+              <span className={styles.date}>26 - 29 September 2022</span>
 
-          <div className={styles.title_container}>
-            <Rocket className={styles.rocket}/>
-            <LogoText className={styles.title}/>
-          </div>
+              <div className={styles.title_container}>
+                  <Rocket className={styles.rocket}/>
+                  <LogoText className={styles.title}/>
+              </div>
 
-          <div className={styles.subtitle}>
+              <div className={styles.subtitle}>
         <span className={styles.highlight}>
           Australia's Premier Rookie Hackathon
         </span>
