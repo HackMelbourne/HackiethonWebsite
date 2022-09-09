@@ -1,36 +1,95 @@
 <svg width="1406" height="1024" viewBox="0 0 1406 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g id="Tiny stars">
-        <path id="Polygon 1" d="M531 118L534.464 124H527.536L531 118Z" fill="#5090E1"/>
-        <path id="Polygon 23" d="M966 598L969.464 604H962.536L966 598Z" fill="#5090E1"/>
-        <path id="Polygon 4" d="M930 726L933.464 732H926.536L930 726Z" fill="#5090E1"/>
-        <path id="Polygon 16" d="M622 869L625.464 875H618.536L622 869Z" fill="#5090E1"/>
-        <path id="Polygon 15" d="M363 815L366.464 821H359.536L363 815Z" fill="#5090E1"/>
-        <path id="Polygon 5" d="M1352 850L1355.46 856H1348.54L1352 850Z" fill="#5090E1"/>
-        <path id="Polygon 33" d="M1390 420L1393.46 426H1386.54L1390 420Z" fill="#5090E1"/>
-        <path id="Polygon 24" d="M1402 992L1405.46 998H1398.54L1402 992Z" fill="#5090E1"/>
-        <path id="Polygon 18" d="M1131 471L1134.46 477H1127.54L1131 471Z" fill="#5090E1"/>
-        <path id="Polygon 17" d="M1256 931L1259.46 937H1252.54L1256 931Z" fill="#5090E1"/>
-        <path id="Polygon 26" d="M1314 783L1317.46 789H1310.54L1314 783Z" fill="#5090E1"/>
-        <path id="Polygon 28" d="M891 944L894.464 950H887.536L891 944Z" fill="#5090E1"/>
-        <path id="Polygon 27" d="M1379 55L1382.46 61H1375.54L1379 55Z" fill="#5090E1"/>
-        <path id="Polygon 14" d="M1126 676L1129.46 682H1122.54L1126 676Z" fill="#5090E1"/>
-        <path id="Polygon 8" d="M1039 54L1042.46 60H1035.54L1039 54Z" fill="#5090E1"/>
-        <path id="Polygon 21" d="M1379 211L1382.46 217H1375.54L1379 211Z" fill="#5090E1"/>
-        <path id="Polygon 9" d="M342 62L345.464 68H338.536L342 62Z" fill="#5090E1"/>
-        <path id="Polygon 13" d="M384 114L387.464 120H380.536L384 114Z" fill="#5090E1"/>
-        <path id="Polygon 30" d="M321 232L324.464 238H317.536L321 232Z" fill="#5090E1"/>
-        <path id="Polygon 22" d="M141 139L144.464 145H137.536L141 139Z" fill="#5090E1"/>
-        <path id="Polygon 25" d="M41 984L44.4641 990H37.5359L41 984Z" fill="#5090E1"/>
-        <path id="Polygon 10" d="M376 718L379.464 724H372.536L376 718Z" fill="#5090E1"/>
-        <path id="Polygon 6" d="M212 534L215.464 540H208.536L212 534Z" fill="#5090E1"/>
-        <path id="Polygon 19" d="M248 957L251.464 963H244.536L248 957Z" fill="#5090E1"/>
-        <path id="Polygon 12" d="M49 582L52.4641 588H45.5359L49 582Z" fill="#5090E1"/>
-        <path id="Polygon 32" d="M4 449L7.4641 455H0.535898L4 449Z" fill="#5090E1"/>
-        <path id="Polygon 11" d="M334 927L337.464 933H330.536L334 927Z" fill="#5090E1"/>
-        <path id="Polygon 31" d="M428 1016L431.464 1022H424.536L428 1016Z" fill="#5090E1"/>
-        <path id="Polygon 20" d="M674 54L677.464 60H670.536L674 54Z" fill="#5090E1"/>
-        <path id="Polygon 3" d="M267 558L270.464 564H263.536L267 558Z" fill="#5090E1"/>
-        <path id="Polygon 34" d="M133 0L136.464 6H129.536L133 0Z" fill="#5090E1"/>
-        <path id="Polygon 20_2" d="M886 142L889.464 148H882.536L886 142Z" fill="#5090E1"/>
-    </g>
+<style>
+/* Twinkle animation */
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  50% {
+    opacity: 1;
+    }
+  100% {
+    opacity: 0;
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Stars */
+#set1 {
+    animation: twinkle 1.4s infinite ease-in-out,expand 1s;
+    animation-delay: 0.5s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#set2 {
+    animation: twinkle 2s infinite ease-in-out,expand 1.5s;
+    animation-delay: 0.2s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#set3 {
+    animation: twinkle 1.6s infinite ease-in-out,expand 1.3s;
+    animation-delay: 0.1s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#set4 {
+    animation: twinkle 1.2s infinite ease-in-out,expand 1.1s;
+    animation-delay: 0.3s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+</style>
+<g id="Tiny stars">
+<g id="set4">
+<path id="Polygon 1" d="M531 118L534.464 124H527.536L531 118Z" fill="#5090E1"/>
+<path id="Polygon 4" d="M930 726L933.464 732H926.536L930 726Z" fill="#5090E1"/>
+<path id="Polygon 15" d="M363 815L366.464 821H359.536L363 815Z" fill="#5090E1"/>
+<path id="Polygon 18" d="M1131 471L1134.46 477H1127.54L1131 471Z" fill="#5090E1"/>
+<path id="Polygon 14" d="M1126 676L1129.46 682H1122.54L1126 676Z" fill="#5090E1"/>
+<path id="Polygon 13" d="M384 114L387.464 120H380.536L384 114Z" fill="#5090E1"/>
+<path id="Polygon 6" d="M212 534L215.464 540H208.536L212 534Z" fill="#5090E1"/>
+<path id="Polygon 31" d="M428 1016L431.464 1022H424.536L428 1016Z" fill="#5090E1"/>
+</g>
+<g id="set3">
+<path id="Polygon 5" d="M1352 850L1355.46 856H1348.54L1352 850Z" fill="#5090E1"/>
+<path id="Polygon 33" d="M1390 420L1393.46 426H1386.54L1390 420Z" fill="#5090E1"/>
+<path id="Polygon 17" d="M1256 931L1259.46 937H1252.54L1256 931Z" fill="#5090E1"/>
+<path id="Polygon 27" d="M1379 55L1382.46 61H1375.54L1379 55Z" fill="#5090E1"/>
+<path id="Polygon 21" d="M1379 211L1382.46 217H1375.54L1379 211Z" fill="#5090E1"/>
+<path id="Polygon 25" d="M41 984L44.4641 990H37.5359L41 984Z" fill="#5090E1"/>
+<path id="Polygon 19" d="M248 957L251.464 963H244.536L248 957Z" fill="#5090E1"/>
+<path id="Polygon 3" d="M267 558L270.464 564H263.536L267 558Z" fill="#5090E1"/>
+</g>
+<g id="set2">
+<path id="Polygon 23" d="M966 598L969.464 604H962.536L966 598Z" fill="#5090E1"/>
+<path id="Polygon 24" d="M1402 992L1405.46 998H1398.54L1402 992Z" fill="#5090E1"/>
+<path id="Polygon 26" d="M1314 783L1317.46 789H1310.54L1314 783Z" fill="#5090E1"/>
+<path id="Polygon 9" d="M342 62L345.464 68H338.536L342 62Z" fill="#5090E1"/>
+<path id="Polygon 12" d="M49 582L52.4641 588H45.5359L49 582Z" fill="#5090E1"/>
+<path id="Polygon 11" d="M334 927L337.464 933H330.536L334 927Z" fill="#5090E1"/>
+<path id="Polygon 34" d="M133 0L136.464 6H129.536L133 0Z" fill="#5090E1"/>
+</g>
+<g id="set1">
+<path id="Polygon 16" d="M622 869L625.464 875H618.536L622 869Z" fill="#5090E1"/>
+<path id="Polygon 28" d="M891 944L894.464 950H887.536L891 944Z" fill="#5090E1"/>
+<path id="Polygon 8" d="M1039 54L1042.46 60H1035.54L1039 54Z" fill="#5090E1"/>
+<path id="Polygon 30" d="M321 232L324.464 238H317.536L321 232Z" fill="#5090E1"/>
+<path id="Polygon 22" d="M141 139L144.464 145H137.536L141 139Z" fill="#5090E1"/>
+<path id="Polygon 10" d="M376 718L379.464 724H372.536L376 718Z" fill="#5090E1"/>
+<path id="Polygon 32" d="M4 449L7.4641 455H0.535898L4 449Z" fill="#5090E1"/>
+<path id="Polygon 20" d="M674 54L677.464 60H670.536L674 54Z" fill="#5090E1"/>
+<path id="Polygon 20_2" d="M886 142L889.464 148H882.536L886 142Z" fill="#5090E1"/>
+</g>
+</g>
 </svg>
