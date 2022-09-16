@@ -1,7 +1,7 @@
 import styles from "./Hero.module.scss";
 import {ReactComponent as LogoText} from '../../assets/logo/3DText.svg';
 import {ReactComponent as Rocket} from '../../assets/logo/rocket.svg';
-import classnames from "classnames";
+import classnames from "classnames"
 
 const Hero = () => {
   return (
