@@ -9,7 +9,7 @@ const Hero = () => {
     <>
       <div className={classnames(styles.bg, styles.small)} />
       <div className={classnames(styles.bg, styles.large)} />
-      <div style={{ position: "relative", zIndex: 1 }}>
+      <div style={{ position: "relative", zIndex: 1, marginTop:90 }}>
         <span className={styles.date}>26 - 29 September 2022</span>
 
         <div className={styles.title_container}>
