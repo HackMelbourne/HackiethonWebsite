@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from "./Hero.module.scss";
-import { ReactComponent as LogoText } from '../../assets/logo/3DText.svg';
-import { ReactComponent as Rocket } from '../../assets/logo/rocket.svg';
+import {ReactComponent as LogoText} from '../../assets/logo/3DText.svg';
+import {ReactComponent as Rocket} from '../../assets/logo/rocket.svg';
 import classnames from "classnames";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (

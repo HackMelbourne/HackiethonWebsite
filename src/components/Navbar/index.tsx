@@ -1,16 +1,12 @@
-import React from 'react';
-import { HashLink as Link } from "react-router-hash-link";
+import React, {useEffect, useRef, useState} from 'react';
+import {HashLink as Link} from "react-router-hash-link";
 import styles from "./Navbar.module.scss";
-
-import rocket from "../../assets/rocket_2022.svg";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { useState, useEffect, useRef } from "react";
 import Burger from "./Burger";
 import Menu from "./Menu";
 import Logo from "./Logo"
 
 // a typed JS object: string attributes to string values, like a Map
-type StringMap = { [label: string]: string };
+/*type StringMap = { [label: string]: string };
 
 interface Props {
   children: JSX.Element;
@@ -44,7 +40,7 @@ const DropdownLink = ({ children, subLinks }: Props) => {
       ) : null}
     </div>
   );
-};
+};*/
 
 // React Ref magic to detect raw events to trigger a function
 const useOnClickOutside = (
@@ -105,7 +101,6 @@ const Navbar = () => {
           UPDATES{" "}
           <FaExternalLinkAlt />
         </a> */}
-        <a href="" target="_blank" rel="noopener noreferrer"></a>
         <a href="https://coherent-tartan-183.notion.site/Schedule-936a68649a02468f862d0dd52cd2d5dd" target="_blank" rel="noopener noreferrer" className={styles.link}>
           Schedule
         </a>

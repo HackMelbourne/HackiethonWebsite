@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./Footer.module.scss";
-import { FaDiscord, FaRegEnvelope, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import {FaDiscord, FaFacebookSquare, FaLinkedin} from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>

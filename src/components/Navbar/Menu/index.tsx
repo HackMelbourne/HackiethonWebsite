@@ -22,7 +22,6 @@ const Menu = ({ open }: Props) => {
       >
         UPDATES
       </a> */}
-      <a href="" target="_blank" rel="noopener noreferrer"></a>
       <a href="https://coherent-tartan-183.notion.site/Schedule-936a68649a02468f862d0dd52cd2d5dd" target="_blank" rel="noopener noreferrer" className={styles.link}>Schedule</a>
       <a href="https://coherent-tartan-183.notion.site/Prizes-36103eedb56341f58151a08b14986ba9" target="_blank" rel="noopener noreferrer" className={styles.link}>Prizes</a>
       <a href="https://coherent-tartan-183.notion.site/Hackathon-brief-5fdc05f75bf2476d8bfb4c5e63c7397d" target="_blank" rel="noopener noreferrer" className={styles.link}>About</a>
