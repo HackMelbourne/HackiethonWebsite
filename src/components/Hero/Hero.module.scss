@@ -17,6 +17,9 @@
     width: 100vw;
     height: 100vh;
     background-image: url('../../assets/background/large_obj.svg');
+    @include phone {
+      display: none;
+    }
   }
 
   &.small {
@@ -67,7 +70,6 @@
 
 .subtitle {
   margin: 0 auto;
-  width: 80%;
   font-size: $font-size-2;
   margin-bottom: 2rem;
   display: flex;
