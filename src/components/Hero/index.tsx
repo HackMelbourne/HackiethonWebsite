@@ -9,7 +9,7 @@ const Hero = () => {
           <div className={classnames(styles.bg, styles.small)}/>
           <div className={classnames(styles.bg, styles.large)}/>
           <div style={{position: "relative", zIndex: 1}}>
-              <span className={styles.date}>26 - 29 September 2022</span>
+              <span className={styles.date} style={{marginTop: "100px"}}>26 - 29 September 2022</span>
 
               <div className={styles.title_container}>
                   <Rocket className={styles.rocket}/>
@@ -22,7 +22,10 @@ const Hero = () => {
         </span>
       </div>
       <div className={styles.subtitle}>
-        Are you a student who is new to the tech hackathon scene? Introducing the Hackiethon, a hackathon catered especially for first-time hackers. Come experience the enjoyment and learning of a hackathon in a beginner-friendly environment!
+        Are you a student who is new to the tech hackathon scene?
+        Introducing the Hackiethon, a hackathon catered especially for first-time hackers.
+        Come experience the enjoyment and learning of a hackathon in a beginner-friendly environment!
+      
       </div>
       <div className={styles.buttons}>
         {/* Should change to <a> for easier navigation */}
