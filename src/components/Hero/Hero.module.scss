@@ -77,9 +77,16 @@
 .buttons {
   display: flex;
   justify-content: space-evenly;
-  width: 30%;
+  align-items: center;
+  max-width: 500px;
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 3rem;
+  button {
+    margin: 1rem 1rem;
+    min-width: 200px;
+    cursor: pointer;
+  }
 }
 
 button {
