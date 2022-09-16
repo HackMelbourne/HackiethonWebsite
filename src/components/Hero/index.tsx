@@ -6,8 +6,8 @@ import classnames from "classnames"
 const Hero = () => {
   return (
       <>
-          <div className={classnames(styles.bg, styles.large)}/>
           <div className={classnames(styles.bg, styles.small)}/>
+          <div className={classnames(styles.bg, styles.large)}/>
           <div style={{position: "relative", zIndex: 1}}>
               <span className={styles.date}>26 - 29 September 2022</span>
 
