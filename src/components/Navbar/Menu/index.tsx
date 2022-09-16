@@ -21,11 +21,12 @@ const Menu = ({ open }: Props) => {
       >
         UPDATES
       </a> */}
-      <Link to="/#schedule" className={styles.link}>Schedule</Link>
-      <Link to="/#prizes" className={styles.link}>Prizes</Link>
-      <Link to="/#about" className={styles.link}>About</Link>
-      <Link to="/#faqs" className={styles.link}>FAQs</Link>
-      <Link to="/#submission" className={styles.link}>Submission</Link>
+      <a href="" target="_blank" rel="noopener noreferrer"></a>
+      <a href="https://coherent-tartan-183.notion.site/Schedule-936a68649a02468f862d0dd52cd2d5dd" target="_blank" rel="noopener noreferrer" className={styles.link}>Schedule</a>
+      <a href="https://coherent-tartan-183.notion.site/Prizes-36103eedb56341f58151a08b14986ba9" target="_blank" rel="noopener noreferrer" className={styles.link}>Prizes</a>
+      <a href="https://coherent-tartan-183.notion.site/Hackathon-brief-5fdc05f75bf2476d8bfb4c5e63c7397d" target="_blank" rel="noopener noreferrer" className={styles.link}>About</a>
+      <a href="https://coherent-tartan-183.notion.site/FAQ-64723d00d7804fe1b667ab4f3916dda1" target="_blank" rel="noopener noreferrer" className={styles.link}>FAQs</a>
+      <a href="https://coherent-tartan-183.notion.site/Sponsors-3553de9dae6c4e549453ff8b85523270" target="_blank" rel="noopener noreferrer" className={styles.link}>Sponsors</a>
       {/* <a
         href="https://forms.gle/JuhBU1fiFLwe8HzH8"
         target="_blank"

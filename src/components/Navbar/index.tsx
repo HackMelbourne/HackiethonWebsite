@@ -73,20 +73,20 @@ const Navbar = () => {
   useOnClickOutside(ref, () => setOpen(false));
 
   // map dropdown labels to href's
-  const subLinksMap = {
-    participants: {
-      ABOUT: "/#about",
-      SCHEDULE: "/#schedule",
-      "RULES & FAQ": "/#rules",
-      COMMUNICATION: "/#communication",
-      // RESOURCES: "/#resources",
-      PRIZES: "/#prizes",
-    },
-    sponsors: {
-      "SPONSORS LIST": "/sponsors/#list",
-      "VIDEO FEATURES": "/sponsors/#videos",
-    },
-  };
+  // const subLinksMap = {
+  //   participants: {
+  //     ABOUT: "/#about",
+  //     SCHEDULE: "https://coherent-tartan-183.notion.site/Schedule-936a68649a02468f862d0dd52cd2d5dd",
+  //     "RULES & FAQ": "/#rules",
+  //     COMMUNICATION: "/#communication",
+  //     // RESOURCES: "/#resources",
+  //     PRIZES: "/#prizes",
+  //   },
+  //   sponsors: {
+  //     "SPONSORS LIST": "/sponsors/#list",
+  //     "VIDEO FEATURES": "/sponsors/#videos",
+  //   },
+  // };
 
   // href="#" scrolls to top
   return (
@@ -104,21 +104,22 @@ const Navbar = () => {
           UPDATES{" "}
           <FaExternalLinkAlt />
         </a> */}
-        <Link to="/#schedule" className={styles.link}>
+        <a href="" target="_blank" rel="noopener noreferrer"></a>
+        <a href="https://coherent-tartan-183.notion.site/Schedule-936a68649a02468f862d0dd52cd2d5dd" target="_blank" rel="noopener noreferrer" className={styles.link}>
           Schedule
-        </Link>
-        <Link to="/#prizes" className={styles.link}>
+        </a>
+        <a href="https://coherent-tartan-183.notion.site/Prizes-36103eedb56341f58151a08b14986ba9" target="_blank" rel="noopener noreferrer" className={styles.link}>
           Prizes
-        </Link>
-        <Link to="/#about" className={styles.link}>
+        </a>
+        <a href="https://coherent-tartan-183.notion.site/Hackathon-brief-5fdc05f75bf2476d8bfb4c5e63c7397d" target="_blank" rel="noopener noreferrer" className={styles.link}>
           About
-        </Link>
-        <Link to="/#faqs" className={styles.link}>
+        </a>
+        <a href="https://coherent-tartan-183.notion.site/FAQ-64723d00d7804fe1b667ab4f3916dda1" target="_blank" rel="noopener noreferrer" className={styles.link}>
           FAQs
-        </Link>
-        <Link to="/#submission" className={styles.link}>
-          Submission
-        </Link>
+        </a>
+        <a href="https://coherent-tartan-183.notion.site/Sponsors-3553de9dae6c4e549453ff8b85523270" target="_blank" rel="noopener noreferrer" className={styles.link}>
+          Sponsors
+        </a>
 
         {/* <DropdownLink subLinks={subLinksMap.participants}>
           <Link to="/#" className={styles.link}>
@@ -134,7 +135,7 @@ const Navbar = () => {
           SUBMISSION
         </Link> */}
         <a
-          href="https://forms.gle/JuhBU1fiFLwe8HzH8"
+          href="https://www.eventbrite.com.au/e/hackiethon-2022-tickets-405802916447?aff=ebdshpsearchautocomplete"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.button}
