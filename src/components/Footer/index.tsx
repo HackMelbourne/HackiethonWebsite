@@ -1,17 +1,16 @@
 import styles from "./Footer.module.scss";
-import { FaRegEnvelope, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
-
+import { FaDiscord, FaRegEnvelope, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <nav className={styles.links}>
         <a
-          href="mailto:hackmelb.team@gmail.com"
-          title="Send us an email!"
+          href="https://discord.gg/tEQ5m6ayTV"
+          title="Join our Discord!"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaRegEnvelope />
+          <FaDiscord />
         </a>
         <a
           href="https://www.facebook.com/hackmelbourne"

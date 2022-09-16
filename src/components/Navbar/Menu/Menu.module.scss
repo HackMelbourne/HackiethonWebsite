@@ -2,14 +2,14 @@
 
 .menu {
   height: 100vh;
-  padding: 3rem;
+  padding: 4rem 2rem;
 
   // center links vertically, and text centered as well
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   text-align: center;
-  background-color: $primary-darker;
+  background-color: #06030D;
 
   // top left
   position: absolute;
@@ -24,20 +24,31 @@
 
   a {
     font-size: $font-size-1;
-    border: 2px solid $accent-yellow;
+    // border: 2px solid $accent-yellow;
     border-radius: 50px;
-    margin: 2rem 0;
-    padding: 0.3rem 1rem;
+    margin: 1rem 0;
+    padding: 0.3rem 0rem;
     color: $primary-white;
     text-align: center;
-    
+
     &:hover,
     &:focus {
       background-color: $accent-yellow;
       color: $primary-dark;
-    } 
+    }
+  }
+
+  a.logoLink {
+
+    &:hover,
+    &:focus {
+      color: $primary-dark;
+      background-color: transparent;
+    }
   }
 }
+
+
 
 // if open, slide out from the right: undo the original translateX
 .open {

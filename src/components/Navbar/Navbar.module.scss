@@ -3,19 +3,25 @@
 .logo {
   display: flex;
   align-items: center;
+
   img {
     margin: 0 0.8rem;
   }
+
   .text {
     font-weight: bolder;
     font-size: $font-size-3;
-    color: $accent-yellow;
+    color: $dark-purple;
+    text-transform: uppercase;
   }
+
   .subtext {
     // make text and subtext vertically closer
     margin-top: -0.4rem;
-    font-size: $font-size-0;
-    color: $primary-white;
+    font-weight: bolder;
+    font-size: $font-size-3;
+    color: $light-purple;
+    text-transform: uppercase;
   }
 }
 
@@ -25,14 +31,19 @@
   align-items: center;
   left: 0;
   right: 0;
+  // background-color: $primary-darker;
   background-color: $primary-darker;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-size: $font-size-2;
   padding: 1rem;
-  @include desktop {
-    padding: 1rem 6rem;
+  @include phone {
+    position: absolute;
   }
-
+  @include desktop {
+    position: fixed;
+    padding: 1rem 6rem;
+    background-color: transparent;
+  }
   // appears in front of other elements
   z-index: 20;
 }
@@ -46,6 +57,7 @@
 
 .link {
   font-size: $font-size-1;
+  font-weight: 500;
   margin: 0 1rem;
   padding: 0.5rem;
   @include remove-on-phone;
@@ -63,12 +75,13 @@
     background-color: $accent-yellow;
     color: $primary-darker;
   }
+
   @include remove-on-phone;
 }
 
 .dropdownMenu {
   position: absolute;
-  background-color: $primary-darker;
+  // background-color: $primary-darker;
   margin-left: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -77,10 +90,13 @@
     list-style: none;
     margin: 0;
     padding: 1rem;
+
     li {
       padding: 0.2rem;
+
       div {
         display: flex;
+
         span {
           padding-left: 1rem;
           flex-grow: 1;

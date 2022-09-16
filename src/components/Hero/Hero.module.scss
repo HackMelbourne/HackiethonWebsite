@@ -1,29 +1,115 @@
 @import "../../styles/styles.scss";
 
-.date {
-  display: inline-block;
-  background-color: $galaxy-purple;
-  font-size: $font-size-4;
-  font-weight: bold;
-  margin: 0;
-  padding: 0.5rem 1rem;
-}
+.bg {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  aspect-ratio: 1731/1259;
+  width: max(2100px, 100%);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  overflow-x: hidden;
 
-.title {
-  margin: 0;
-  font-size: $font-size-5;
-  @include desktop {
-    font-size: $font-size-7;
+  &.large {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/background/large_obj.svg');
   }
-  font-weight: bold;
-  color: $accent-yellow;
+
+  &.small {
+    background-image: url('../../assets/background/stars.svg');
+  }
 }
 
-.subtitle {
-  margin: 0;
+.date {
+  font-family: $font-secondary;
+  font-weight: 500;
   font-size: $font-size-3;
 }
 
+.body{
+  margin-top: 100px;
+}
+
+.title_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.rocket {
+  display: block;
+  height: 150px;
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+
+.title>g>#bottom {
+  width: 5px;
+
+}
+
+.title {
+  display: block;
+  // make an animation for text
+
+}
+
+.title_accent {
+  color: $dark-purple;
+}
+
+.subtitle {
+  margin: 0 auto;
+  width: 80%;
+  font-size: $font-size-2;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+
 .highlight {
-  font-weight: bold;
+  font-family: $font-primary;
+  font-size: $font-size-6;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: $light-purple;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 500px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 3rem;
+  button {
+    margin: 1rem 1rem;
+    min-width: 200px;
+    cursor: pointer;
+  }
+}
+
+button {
+  padding: 1rem 2.5rem;
+  border-radius: 5rem;
+  border: none;
+  font-size: $font-size-1;
+  font-family: $font-secondary;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button_accent {
+  background-color: $accent-green;
 }

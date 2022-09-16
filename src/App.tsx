@@ -1,12 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Background from "./components/Background";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Submission from "./pages/Submission";
-import Sponsors from "./pages/Sponsors";
-import PageNotFound from "./pages/PageNotFound";
 import Footer from "./components/Footer";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 const App = () => {
   // getting the total page height is effectful, this is needed for Scroll
@@ -23,21 +20,7 @@ const App = () => {
       <div ref={ref}>
         <Background>
           <Navbar />
-          <Switch>
-            <Route exact path="/">
-              <Home pageHeight={pageHeight} />
-            </Route>
-            <Route path="/sponsors">
-              <Sponsors />
-            </Route>
-            <Route path="/submission">
-              <Submission />
-            </Route>
-            <Route>
-              {/* matches any other route: page for 404 error */}
-              <PageNotFound />
-            </Route>
-          </Switch>
+          <Home pageHeight={pageHeight} />
         </Background>
         <Footer />
       </div>

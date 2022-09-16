@@ -1,23 +1,12 @@
 import { HashLink as Link } from "react-router-hash-link";
 import styles from "./Navbar.module.scss";
 
-import rocket from "../../assets/rocket-yellow.svg";
+import rocket from "../../assets/rocket_2022.svg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
 import Burger from "./Burger";
 import Menu from "./Menu";
-
-const Logo = () => {
-  return (
-    <div className={styles.logo}>
-      <img src={rocket} height="60px" alt="rocket" />
-      <div>
-        <div className={styles.text}>Hackiethon</div>
-        <div className={styles.subtext}>by HackMelbourne</div>
-      </div>
-    </div>
-  );
-};
+import Logo from "./Logo"
 
 // a typed JS object: string attributes to string values, like a Map
 type StringMap = { [label: string]: string };
@@ -84,20 +73,20 @@ const Navbar = () => {
   useOnClickOutside(ref, () => setOpen(false));
 
   // map dropdown labels to href's
-  const subLinksMap = {
-    participants: {
-      ABOUT: "/#about",
-      SCHEDULE: "/#schedule",
-      "RULES & FAQ": "/#rules",
-      COMMUNICATION: "/#communication",
-      // RESOURCES: "/#resources",
-      PRIZES: "/#prizes",
-    },
-    sponsors: {
-      "SPONSORS LIST": "/sponsors/#list",
-      "VIDEO FEATURES": "/sponsors/#videos",
-    },
-  };
+  // const subLinksMap = {
+  //   participants: {
+  //     ABOUT: "/#about",
+  //     SCHEDULE: "https://coherent-tartan-183.notion.site/Schedule-936a68649a02468f862d0dd52cd2d5dd",
+  //     "RULES & FAQ": "/#rules",
+  //     COMMUNICATION: "/#communication",
+  //     // RESOURCES: "/#resources",
+  //     PRIZES: "/#prizes",
+  //   },
+  //   sponsors: {
+  //     "SPONSORS LIST": "/sponsors/#list",
+  //     "VIDEO FEATURES": "/sponsors/#videos",
+  //   },
+  // };
 
   // href="#" scrolls to top
   return (
@@ -106,7 +95,7 @@ const Navbar = () => {
         <Logo />
       </Link>
       <div className={styles.links}>
-        <a
+        {/* <a
           href="https://www.facebook.com/events/426944495051069/?active_tab=discussion"
           target="_blank"
           rel="noopener noreferrer"
@@ -114,8 +103,25 @@ const Navbar = () => {
         >
           UPDATES{" "}
           <FaExternalLinkAlt />
+        </a> */}
+        <a href="" target="_blank" rel="noopener noreferrer"></a>
+        <a href="https://coherent-tartan-183.notion.site/Schedule-936a68649a02468f862d0dd52cd2d5dd" target="_blank" rel="noopener noreferrer" className={styles.link}>
+          Schedule
         </a>
-        <DropdownLink subLinks={subLinksMap.participants}>
+        <a href="https://coherent-tartan-183.notion.site/Prizes-36103eedb56341f58151a08b14986ba9" target="_blank" rel="noopener noreferrer" className={styles.link}>
+          Prizes
+        </a>
+        <a href="https://coherent-tartan-183.notion.site/Hackathon-brief-5fdc05f75bf2476d8bfb4c5e63c7397d" target="_blank" rel="noopener noreferrer" className={styles.link}>
+          About
+        </a>
+        <a href="https://coherent-tartan-183.notion.site/FAQ-64723d00d7804fe1b667ab4f3916dda1" target="_blank" rel="noopener noreferrer" className={styles.link}>
+          FAQs
+        </a>
+        <a href="https://coherent-tartan-183.notion.site/Sponsors-3553de9dae6c4e549453ff8b85523270" target="_blank" rel="noopener noreferrer" className={styles.link}>
+          Sponsors
+        </a>
+
+        {/* <DropdownLink subLinks={subLinksMap.participants}>
           <Link to="/#" className={styles.link}>
             PARTICIPANTS
           </Link>
@@ -127,9 +133,9 @@ const Navbar = () => {
         </DropdownLink>
         <Link to="/submission/#" className={styles.link}>
           SUBMISSION
-        </Link>
+        </Link> */}
         <a
-          href="https://forms.gle/JuhBU1fiFLwe8HzH8"
+          href="https://www.eventbrite.com.au/e/hackiethon-2022-tickets-405802916447?aff=ebdshpsearchautocomplete"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.button}
