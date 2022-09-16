@@ -1,3 +1,4 @@
+import React from 'react';
 import Hero from "../../../components/Hero";
 import styles from "./Title.module.scss";
 

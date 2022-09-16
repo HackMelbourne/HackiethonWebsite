@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from "./Footer.module.scss";
 import { FaDiscord, FaRegEnvelope, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
