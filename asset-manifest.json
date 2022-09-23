@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1cfe87ff.css",
+    "main.js": "/static/js/main.cfe5e1e9.js",
+    "static/js/377.83497d97.chunk.js": "/static/js/377.83497d97.chunk.js",
+    "static/media/poppins-all-400-normal.woff": "/static/media/poppins-all-400-normal.6fbfdac99c274b77fe96.woff",
+    "static/media/poppins-all-700-normal.woff": "/static/media/poppins-all-700-normal.34a71a4b9d011ddf66e9.woff",
+    "static/media/3DText.svg": "/static/media/3DText.7ae345fa52b5e5c6f89b407e853747d2.svg",
+    "static/media/poppins-devanagari-400-normal.woff2": "/static/media/poppins-devanagari-400-normal.64d5f06ee726edd58ca3.woff2",
+    "static/media/poppins-devanagari-700-normal.woff2": "/static/media/poppins-devanagari-700-normal.349ed9fa39221b45ae9a.woff2",
+    "static/media/large_obj.svg": "/static/media/large_obj.ecdb23a09891547ffa9d.svg",
+    "static/media/PlusJakartaDisplay-Medium.woff": "/static/media/PlusJakartaDisplay-Medium.7a858beb405d35e331c2.woff",
+    "static/media/PlusJakartaDisplay-Regular.woff": "/static/media/PlusJakartaDisplay-Regular.7d88a590248efe9a0803.woff",
+    "static/media/PlusJakartaDisplay-Medium.woff2": "/static/media/PlusJakartaDisplay-Medium.aa26b0c84826cae2a362.woff2",
+    "static/media/PlusJakartaDisplay-Regular.woff2": "/static/media/PlusJakartaDisplay-Regular.e14c910e7099f1e1e192.woff2",
+    "static/media/NewakeDemo.woff": "/static/media/NewakeDemo.8b45352f52cf69463a06.woff",
+    "static/media/NewakeDemo.woff2": "/static/media/NewakeDemo.854e3c16ad392e27675d.woff2",
+    "static/media/poppins-latin-400-normal.woff2": "/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
+    "static/media/poppins-latin-700-normal.woff2": "/static/media/poppins-latin-700-normal.d86662fe776dae29ea78.woff2",
+    "static/media/rocket.svg": "/static/media/rocket.a834976831e11e0f7d16db6d3f379739.svg",
+    "static/media/poppins-latin-ext-400-normal.woff2": "/static/media/poppins-latin-ext-400-normal.4f38b4331448d2313adc.woff2",
+    "static/media/poppins-latin-ext-700-normal.woff2": "/static/media/poppins-latin-ext-700-normal.63d2a69665d58b22ceea.woff2",
+    "static/media/stars.svg": "/static/media/stars.bff2dd72e6c0f8c4f6c9.svg",
+    "static/media/rocket_2022.svg": "/static/media/rocket_2022.e9d205dabd07d15c2b0d8c5a123d615c.svg",
+    "index.html": "/index.html",
+    "main.1cfe87ff.css.map": "/static/css/main.1cfe87ff.css.map",
+    "main.cfe5e1e9.js.map": "/static/js/main.cfe5e1e9.js.map",
+    "377.83497d97.chunk.js.map": "/static/js/377.83497d97.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cfe87ff.css",
+    "static/js/main.cfe5e1e9.js"
+  ]
+}
