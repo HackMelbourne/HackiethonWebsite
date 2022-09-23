@@ -25,12 +25,4 @@ Your app is ready to be deployed!
 
 ## Deployment
 
-The website is hosted on HackMelbourne Team's Firebase account.
-
-with Firebase CLI installed,
-
-```_
-firebase login
-npm run build
-firebase deploy
-```
+The website is hosted on GitHub Pages. Simply push to `main` to publish changes.
